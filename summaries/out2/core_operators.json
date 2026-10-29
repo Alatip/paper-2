@@ -1,0 +1,2962 @@
+{
+ "checks": {
+  "decomposition": {
+   "deepseek_hard_true": {
+    "arm2_p4": 0.35,
+    "arm3_p4": 0.2,
+    "n": 20,
+    "single_p4": 0.15,
+    "zero16": 12,
+    "zero16_solved": 3
+   },
+   "deepseek_hard_true_delta_p4_numeric": 0.0,
+   "deepseek_hard_true_delta_p4_numeric_ci": [
+    -0.2857142857142857,
+    0.2857142857142857
+   ],
+   "deepseek_hard_true_zero16_numeric": 7,
+   "deepseek_medium_easy_ci": [
+    -0.6111111111111112,
+    -0.20486111111111116
+   ],
+   "deepseek_medium_easy_delta": -0.40972222222222227,
+   "glm_hard_cap": {
+    "arm2_p4": 0.7105263157894737,
+    "arm3_p4": 0.6578947368421053,
+    "n": 38,
+    "single_p4": 0.3684210526315789,
+    "zero16": 16,
+    "zero16_solved": 10
+   },
+   "items": "decomposition selection.json (97 core items, strata by base T=1 16-draw count), 8,192-token protocol",
+   "source": "summaries/out2/decomposition.json (operators/decomposition.py)"
+  },
+  "weak_debate": {
+   "Cplus": 1,
+   "L": 4,
+   "N": 196,
+   "W": 27,
+   "acc": 0.8622448979591837,
+   "acc0": 0.7448979591836735,
+   "all_wrong": 10,
+   "best_insample": 0.8112244897959183,
+   "delta": [
+    0.11734693877551021,
+    0.0663265306122449,
+    0.1683673469387755
+   ],
+   "items": "debx-weak-pool debate-w (196 = contested + all-wrong + control of the 733 W items)",
+   "mcnemar_p": 3.39532271027565e-05,
+   "oracle": 0.9489795918367347
+  },
+  "weak_synth": {
+   "Cplus": 1,
+   "L": 5,
+   "N": 156,
+   "W": 24,
+   "acc": 0.8012820512820513,
+   "acc0": 0.6794871794871795,
+   "all_wrong": 10,
+   "delta": [
+    0.12179487179487179,
+    0.057692307692307696,
+    0.1858974358974359
+   ],
+   "items": "debx-weak-pool synth-w (contested + all-wrong; inputs = round 0 of W, capped 8,192)",
+   "mcnemar_p": 0.0005461126565933228
+  }
+ },
+ "method": {
+  "answer_rule": "p1",
+  "core_items": 227,
+  "data": "uncapped",
+  "nboot": 10000,
+  "nsplit": 20,
+  "seed": 0
+ },
+ "ops": {
+  "debate_copies_plain": {
+   "gpqa-diamond": {
+    "C0_usd": 0.005698383296551724,
+    "C_usd": 0.02805959727931035,
+    "Cplus": 0,
+    "L": 2,
+    "N": 58,
+    "W": 4,
+    "acc": 0.8448275862068966,
+    "acc0": 0.8103448275862069,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.9370689655172413,
+     "picks": {
+      "claude_opus": 13,
+      "qwen_qwen3.7-plus": 27
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9482758620689655,
+     "cost": 0.006406813903448275,
+     "gain": -0.10344827586206895,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.7525862068965516,
+    "best_insample": 0.7931034482758621,
+    "delta": [
+     0.034482758620689655,
+     -0.05172413793103448,
+     0.1206896551724138
+    ],
+    "gain_vs_bestC": [
+     -0.09224137931034483,
+     -0.19482758620689655,
+     0.0008620689655172412
+    ],
+    "mcnemar_p": 0.6875,
+    "mean_draw": null,
+    "mean_participant": 0.7614942528735632,
+    "oracle": 0.9310344827586207,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.17844827586206902,
+    "prize_insample": 0.13793103448275856,
+    "prize_too_small": false,
+    "resample_share": 0.4915254237288138,
+    "s_heldout": 0.5169082125603869,
+    "s_insample": 0.3750000000000001,
+    "usd_per_extra_item": 0.6484752055000003
+   },
+   "gsm-hard": {
+    "C0_usd": 0.0021850452298245613,
+    "C_usd": 0.009681298984210525,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 1,
+    "acc": 0.9298245614035088,
+    "acc0": 0.9122807017543859,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9271929824561403,
+     "picks": {
+      "claude_sonnet55": 20,
+      "deepseek_deepseek-v3.2": 6,
+      "qwen_qwen3.7-plus": 10,
+      "z-ai_glm-5.3-flash": 4
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9824561403508771,
+     "cost": 0.009060526315789475,
+     "gain": -0.05263157894736836,
+     "model": "claude_sonnet55"
+    },
+    "best_heldout": 0.9333333333333332,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.017543859649122806,
+     0.0,
+     0.05263157894736842
+    ],
+    "gain_vs_bestC": [
+     0.0026315789473684214,
+     -0.03333333333333333,
+     0.03771929824561404
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.8947368421052632,
+    "oracle": 0.9649122807017544,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.03157894736842115,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": false,
+    "resample_share": 0.5,
+    "s_heldout": -0.1111111111111076,
+    "s_insample": -0.9999999999999937,
+    "usd_per_extra_item": 0.427286464
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.0012671514620689656,
+    "C_usd": 0.007312553601724139,
+    "Cplus": 0,
+    "L": 1,
+    "N": 58,
+    "W": 2,
+    "acc": 0.9482758620689655,
+    "acc0": 0.9310344827586207,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9431034482758621,
+     "picks": {
+      "deepseek_deepseek-v3.2": 3,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 24,
+      "z-ai_glm-5.3-flash": 12
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": -0.017241379310344862,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9646551724137932,
+    "best_insample": 0.9827586206896551,
+    "delta": [
+     0.017241379310344827,
+     -0.034482758620689655,
+     0.08620689655172414
+    ],
+    "gain_vs_bestC": [
+     0.005172413793103449,
+     -0.03879310344827586,
+     0.05258620689655172
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9367816091954023,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.03534482758620683,
+    "prize_insample": 0.017241379310344862,
+    "prize_too_small": false,
+    "resample_share": 0.18181818181818166,
+    "s_heldout": -0.4634146341463441,
+    "s_insample": -1.9999999999999936,
+    "usd_per_extra_item": 0.35063332410000003
+   },
+   "olympiad": {
+    "C0_usd": 0.01439916513518519,
+    "C_usd": 0.06373703827407408,
+    "Cplus": 5,
+    "L": 0,
+    "N": 54,
+    "W": 10,
+    "acc": 0.9629629629629629,
+    "acc0": 0.7777777777777778,
+    "all_wrong": 7,
+    "bestC_heldout": {
+     "acc": 0.9740740740740741,
+     "picks": {
+      "claude_opus": 27,
+      "claude_sonnet55": 11,
+      "qwen_qwen3.7-plus": 2
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.02344096296296297,
+     "gain": -0.03703703703703709,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.664814814814815,
+    "best_insample": 0.7222222222222222,
+    "delta": [
+     0.18518518518518517,
+     0.09259259259259259,
+     0.2962962962962963
+    ],
+    "gain_vs_bestC": [
+     -0.011111111111111112,
+     -0.07314814814814816,
+     0.04351851851851852
+    ],
+    "mcnemar_p": 0.001953125,
+    "mean_draw": null,
+    "mean_participant": 0.6666666666666666,
+    "oracle": 0.8703703703703703,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.20555555555555538,
+    "prize_insample": 0.14814814814814814,
+    "prize_too_small": false,
+    "resample_share": 1.4545454545454544,
+    "s_heldout": 1.4504504504504507,
+    "s_insample": 1.6249999999999998,
+    "usd_per_extra_item": 0.26642451495
+   },
+   "pooled": {
+    "C0_usd": 0.005753759962114538,
+    "C_usd": 0.02663092008810573,
+    "Cplus": 5,
+    "L": 3,
+    "N": 227,
+    "W": 17,
+    "acc": 0.920704845814978,
+    "acc0": 0.8590308370044053,
+    "all_wrong": 13,
+    "bestC_heldout": {
+     "acc": 0.9455947136563877,
+     "picks": {
+      "claude_opus": 17,
+      "claude_sonnet55": 5,
+      "qwen_qwen3.7-plus": 18
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9559471365638766,
+     "cost": 0.02023291629955947,
+     "gain": -0.03524229074889862,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.8506607929515418,
+    "best_insample": 0.8634361233480177,
+    "delta": [
+     0.06167400881057269,
+     0.02643171806167401,
+     0.1013215859030837
+    ],
+    "gain_vs_bestC": [
+     -0.02488986784140969,
+     -0.057048458149779734,
+     0.005286343612334802
+    ],
+    "mcnemar_p": 0.0025768280029296875,
+    "mean_draw": null,
+    "mean_participant": 0.8171806167400881,
+    "oracle": 0.9427312775330396,
+    "pool_prize_saturation": 0.03964757709251099,
+    "prize": 0.0920704845814978,
+    "prize_insample": 0.07929515418502198,
+    "prize_too_small": false,
+    "resample_share": 0.8245614035087723,
+    "s_heldout": 0.760765550239235,
+    "s_insample": 0.7222222222222227,
+    "usd_per_extra_item": 0.3385082391857143
+   }
+  },
+  "debate_copies_pressure": {
+   "gpqa-diamond": {
+    "C0_usd": 0.005698383296551724,
+    "C_usd": 0.02200205836034483,
+    "Cplus": 0,
+    "L": 1,
+    "N": 58,
+    "W": 4,
+    "acc": 0.8620689655172413,
+    "acc0": 0.8103448275862069,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.9370689655172413,
+     "picks": {
+      "claude_opus": 13,
+      "qwen_qwen3.7-plus": 27
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9482758620689655,
+     "cost": 0.006406813903448275,
+     "gain": -0.0862068965517242,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.7525862068965516,
+    "best_insample": 0.7931034482758621,
+    "delta": [
+     0.05172413793103448,
+     -0.017241379310344827,
+     0.13793103448275862
+    ],
+    "gain_vs_bestC": [
+     -0.07500000000000001,
+     -0.1724137931034483,
+     0.013793103448275858
+    ],
+    "mcnemar_p": 0.375,
+    "mean_draw": null,
+    "mean_participant": 0.7614942528735632,
+    "oracle": 0.9310344827586207,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.17844827586206902,
+    "prize_insample": 0.13793103448275856,
+    "prize_too_small": false,
+    "resample_share": 0.5932203389830507,
+    "s_heldout": 0.6135265700483091,
+    "s_insample": 0.4999999999999996,
+    "usd_per_extra_item": 0.3152043845666667
+   },
+   "gsm-hard": {
+    "C0_usd": 0.0021850452298245613,
+    "C_usd": 0.00999214424385965,
+    "Cplus": 1,
+    "L": 0,
+    "N": 57,
+    "W": 2,
+    "acc": 0.9473684210526315,
+    "acc0": 0.9122807017543859,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9280701754385965,
+     "picks": {
+      "claude_sonnet55": 22,
+      "deepseek_deepseek-v3.2": 6,
+      "qwen_qwen3.7-plus": 8,
+      "z-ai_glm-5.3-flash": 4
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9824561403508771,
+     "cost": 0.009060526315789475,
+     "gain": -0.03508771929824561,
+     "model": "claude_sonnet55"
+    },
+    "best_heldout": 0.9333333333333332,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.03508771929824561,
+     0.0,
+     0.08771929824561403
+    ],
+    "gain_vs_bestC": [
+     0.01929824561403509,
+     -0.023684210526315787,
+     0.06666666666666667
+    ],
+    "mcnemar_p": 0.5,
+    "mean_draw": null,
+    "mean_participant": 0.8947368421052632,
+    "oracle": 0.9649122807017544,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.03157894736842115,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": false,
+    "resample_share": 0.7499999999999992,
+    "s_heldout": 0.4444444444444444,
+    "s_insample": 0.0,
+    "usd_per_extra_item": 0.22250232190000002
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.0012671514620689656,
+    "C_usd": 0.007300736506896552,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 2,
+    "acc": 0.9655172413793104,
+    "acc0": 0.9310344827586207,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9431034482758621,
+     "picks": {
+      "deepseek_deepseek-v3.2": 3,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 24,
+      "z-ai_glm-5.3-flash": 12
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": 0.0,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9646551724137932,
+    "best_insample": 0.9827586206896551,
+    "delta": [
+     0.034482758620689655,
+     0.0,
+     0.08620689655172414
+    ],
+    "gain_vs_bestC": [
+     0.022413793103448276,
+     -0.03017241379310345,
+     0.08017241379310346
+    ],
+    "mcnemar_p": 0.5,
+    "mean_draw": null,
+    "mean_participant": 0.9367816091954023,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.03534482758620683,
+    "prize_insample": 0.017241379310344862,
+    "prize_too_small": false,
+    "resample_share": 0.45454545454545503,
+    "s_heldout": 0.024390243902438335,
+    "s_insample": -0.9999999999999936,
+    "usd_per_extra_item": 0.1749739663
+   },
+   "olympiad": {
+    "C0_usd": 0.01439916513518519,
+    "C_usd": 0.06401713644444446,
+    "Cplus": 5,
+    "L": 0,
+    "N": 54,
+    "W": 10,
+    "acc": 0.9629629629629629,
+    "acc0": 0.7777777777777778,
+    "all_wrong": 7,
+    "bestC_heldout": {
+     "acc": 0.9740740740740741,
+     "picks": {
+      "claude_opus": 27,
+      "claude_sonnet55": 11,
+      "qwen_qwen3.7-plus": 2
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.02344096296296297,
+     "gain": -0.03703703703703709,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.664814814814815,
+    "best_insample": 0.7222222222222222,
+    "delta": [
+     0.18518518518518517,
+     0.09259259259259259,
+     0.2962962962962963
+    ],
+    "gain_vs_bestC": [
+     -0.011111111111111112,
+     -0.05648148148148148,
+     0.024074074074074078
+    ],
+    "mcnemar_p": 0.001953125,
+    "mean_draw": null,
+    "mean_participant": 0.6666666666666666,
+    "oracle": 0.8703703703703703,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.20555555555555538,
+    "prize_insample": 0.14814814814814814,
+    "prize_too_small": false,
+    "resample_share": 1.4545454545454544,
+    "s_heldout": 1.4504504504504507,
+    "s_insample": 1.6249999999999998,
+    "usd_per_extra_item": 0.26793704507000005
+   },
+   "pooled": {
+    "C0_usd": 0.005753759962114538,
+    "C_usd": 0.02522484445903084,
+    "Cplus": 6,
+    "L": 1,
+    "N": 227,
+    "W": 18,
+    "acc": 0.933920704845815,
+    "acc0": 0.8590308370044053,
+    "all_wrong": 13,
+    "bestC_heldout": {
+     "acc": 0.9455947136563877,
+     "picks": {
+      "claude_opus": 16,
+      "claude_sonnet55": 5,
+      "qwen_qwen3.7-plus": 19
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9559471365638766,
+     "cost": 0.02023291629955947,
+     "gain": -0.022026431718061623,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.8506607929515418,
+    "best_insample": 0.8634361233480177,
+    "delta": [
+     0.07488986784140969,
+     0.039647577092511016,
+     0.11013215859030837
+    ],
+    "gain_vs_bestC": [
+     -0.011674008810572685,
+     -0.04207048458149779,
+     0.019162995594713655
+    ],
+    "mcnemar_p": 7.62939453125e-05,
+    "mean_draw": null,
+    "mean_participant": 0.8171806167400881,
+    "oracle": 0.9427312775330396,
+    "pool_prize_saturation": 0.03964757709251099,
+    "prize": 0.0920704845814978,
+    "prize_insample": 0.07929515418502198,
+    "prize_too_small": false,
+    "resample_share": 0.9298245614035091,
+    "s_heldout": 0.9043062200956943,
+    "s_insample": 0.8888888888888894,
+    "usd_per_extra_item": 0.2599962459294118
+   }
+  },
+  "debate_copies_selfonly": {
+   "gpqa-diamond": {
+    "C0_usd": 0.005781326946428572,
+    "C_usd": 0.02201664604821429,
+    "Cplus": 0,
+    "L": 2,
+    "N": 56,
+    "W": 2,
+    "acc": 0.8035714285714286,
+    "acc0": 0.8035714285714286,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.9401785714285715,
+     "picks": {
+      "claude_opus": 6,
+      "qwen_qwen3.7-plus": 34
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9464285714285714,
+     "cost": 0.0065435898392857145,
+     "gain": -0.1428571428571428,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.7687499999999999,
+    "best_insample": 0.8035714285714286,
+    "delta": [
+     0.0,
+     -0.07142857142857142,
+     0.07142857142857142
+    ],
+    "gain_vs_bestC": [
+     -0.13660714285714287,
+     -0.25089285714285714,
+     -0.02589285714285714
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.7589285714285714,
+    "oracle": 0.9285714285714286,
+    "pool_prize_saturation": 0.0357142857142857,
+    "prize": 0.15982142857142867,
+    "prize_insample": 0.125,
+    "prize_too_small": false,
+    "resample_share": 0.26315789473684237,
+    "s_heldout": 0.21787709497206753,
+    "s_insample": 0.0,
+    "usd_per_extra_item": null
+   },
+   "gsm-hard": {
+    "C0_usd": 0.0021850452298245613,
+    "C_usd": 0.007781085389473683,
+    "Cplus": 1,
+    "L": 1,
+    "N": 57,
+    "W": 2,
+    "acc": 0.9298245614035088,
+    "acc0": 0.9122807017543859,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9052631578947368,
+     "picks": {
+      "claude_sonnet55": 3,
+      "deepseek_deepseek-v3.2": 6,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 21,
+      "z-ai_glm-5.3-flash": 9
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9473684210526315,
+     "cost": 0.001955068607017544,
+     "gain": -0.01754385964912275,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9333333333333332,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.017543859649122806,
+     -0.03508771929824561,
+     0.08771929824561403
+    ],
+    "gain_vs_bestC": [
+     0.024561403508771937,
+     -0.028070175438596485,
+     0.0850877192982456
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.8947368421052632,
+    "oracle": 0.9649122807017544,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.03157894736842115,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": false,
+    "resample_share": 0.5,
+    "s_heldout": -0.1111111111111076,
+    "s_insample": -0.9999999999999937,
+    "usd_per_extra_item": 0.3189742891
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.0012671514620689656,
+    "C_usd": 0.004876560663793105,
+    "Cplus": 0,
+    "L": 1,
+    "N": 58,
+    "W": 2,
+    "acc": 0.9482758620689655,
+    "acc0": 0.9310344827586207,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9431034482758621,
+     "picks": {
+      "deepseek_deepseek-v3.2": 3,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 24,
+      "z-ai_glm-5.3-flash": 12
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": -0.017241379310344862,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9646551724137932,
+    "best_insample": 0.9827586206896551,
+    "delta": [
+     0.017241379310344827,
+     -0.034482758620689655,
+     0.06896551724137931
+    ],
+    "gain_vs_bestC": [
+     0.005172413793103449,
+     -0.03793103448275861,
+     0.05344827586206897
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9367816091954023,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.03534482758620683,
+    "prize_insample": 0.017241379310344862,
+    "prize_too_small": false,
+    "resample_share": 0.18181818181818166,
+    "s_heldout": -0.4634146341463441,
+    "s_insample": -1.9999999999999936,
+    "usd_per_extra_item": 0.20934573370000006
+   },
+   "olympiad": {
+    "C0_usd": 0.01439916513518519,
+    "C_usd": 0.08659748247592594,
+    "Cplus": 6,
+    "L": 0,
+    "N": 54,
+    "W": 10,
+    "acc": 0.9629629629629629,
+    "acc0": 0.7777777777777778,
+    "all_wrong": 7,
+    "bestC_heldout": {
+     "acc": 0.9740740740740741,
+     "picks": {
+      "claude_opus": 27,
+      "claude_sonnet55": 11,
+      "qwen_qwen3.7-plus": 2
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.02344096296296297,
+     "gain": -0.03703703703703709,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.664814814814815,
+    "best_insample": 0.7222222222222222,
+    "delta": [
+     0.18518518518518517,
+     0.09259259259259259,
+     0.2962962962962963
+    ],
+    "gain_vs_bestC": [
+     -0.011111111111111112,
+     -0.07314814814814816,
+     0.041666666666666664
+    ],
+    "mcnemar_p": 0.001953125,
+    "mean_draw": null,
+    "mean_participant": 0.6666666666666666,
+    "oracle": 0.8703703703703703,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.20555555555555538,
+    "prize_insample": 0.14814814814814814,
+    "prize_too_small": false,
+    "resample_share": 1.4545454545454544,
+    "s_heldout": 1.4504504504504507,
+    "s_insample": 1.6249999999999998,
+    "usd_per_extra_item": 0.3898709136400001
+   },
+   "pooled": {
+    "C0_usd": 0.005774895952000001,
+    "C_usd": 0.029491371636,
+    "Cplus": 7,
+    "L": 4,
+    "N": 225,
+    "W": 16,
+    "acc": 0.9111111111111111,
+    "acc0": 0.8577777777777778,
+    "all_wrong": 13,
+    "bestC_heldout": {
+     "acc": 0.9417777777777778,
+     "picks": {
+      "claude_opus": 15,
+      "claude_sonnet55": 6,
+      "qwen_qwen3.7-plus": 19
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9555555555555556,
+     "cost": 0.020277653333333333,
+     "gain": -0.04444444444444451,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.8544444444444445,
+    "best_insample": 0.8622222222222222,
+    "delta": [
+     0.05333333333333334,
+     0.013333333333333334,
+     0.09333333333333334
+    ],
+    "gain_vs_bestC": [
+     -0.03066666666666667,
+     -0.06866666666666667,
+     0.006222222222222222
+    ],
+    "mcnemar_p": 0.01181793212890625,
+    "mean_draw": null,
+    "mean_participant": 0.817037037037037,
+    "oracle": 0.9422222222222222,
+    "pool_prize_saturation": 0.039999999999999925,
+    "prize": 0.08777777777777773,
+    "prize_insample": 0.07999999999999996,
+    "prize_too_small": false,
+    "resample_share": 0.7514792899408286,
+    "s_heldout": 0.6455696202531647,
+    "s_insample": 0.6111111111111112,
+    "usd_per_extra_item": 0.444683919075
+   }
+  },
+  "debate_mixed": {
+   "gpqa-diamond": {
+    "C0_usd": 0.07134017618793101,
+    "C_usd": 0.20904643973620693,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 5,
+    "acc": 0.9827586206896551,
+    "acc0": 0.896551724137931,
+    "all_wrong": 1,
+    "bestC_heldout": {
+     "acc": 0.9353448275862069,
+     "picks": {
+      "claude_opus": 15,
+      "qwen_qwen3.7-plus": 25
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9482758620689655,
+     "cost": 0.006406813903448275,
+     "gain": 0.03448275862068961,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9482758620689655,
+    "best_insample": 0.9482758620689655,
+    "delta": [
+     0.08620689655172414,
+     0.017241379310344827,
+     0.1724137931034483
+    ],
+    "gain_vs_bestC": [
+     0.04741379310344827,
+     0.010344827586206896,
+     0.0982758620689655
+    ],
+    "mcnemar_p": 0.0625,
+    "mean_draw": null,
+    "mean_participant": 0.7959770114942529,
+    "oracle": 0.9827586206896551,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.03448275862068961,
+    "prize_insample": 0.03448275862068961,
+    "prize_too_small": false,
+    "resample_share": 1.0,
+    "s_heldout": 1.0,
+    "s_insample": 1.0,
+    "usd_per_extra_item": 1.5973926571600006
+   },
+   "gsm-hard": {
+    "C0_usd": 0.02347583407894737,
+    "C_usd": 0.09003738933333331,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 0,
+    "acc": 0.9473684210526315,
+    "acc0": 0.9473684210526315,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9307017543859648,
+     "picks": {
+      "claude_sonnet55": 23,
+      "deepseek_deepseek-v3.2": 6,
+      "qwen_qwen3.7-plus": 8,
+      "z-ai_glm-5.3-flash": 3
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9824561403508771,
+     "cost": 0.009060526315789475,
+     "gain": -0.03508771929824561,
+     "model": "claude_sonnet55"
+    },
+    "best_heldout": 0.9298245614035088,
+    "best_insample": 0.9824561403508771,
+    "delta": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gain_vs_bestC": [
+     0.016666666666666666,
+     -0.011403508771929824,
+     0.04736842105263158
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9122807017543859,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.07017543859649122,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": false,
+    "resample_share": 0.39999999999999974,
+    "s_heldout": 0.2499999999999992,
+    "s_insample": -1.9999999999999938,
+    "usd_per_extra_item": null
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.023398956718965514,
+    "C_usd": 0.09381582447586206,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 1,
+    "acc": 0.9482758620689655,
+    "acc0": 0.9310344827586207,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9370689655172413,
+     "picks": {
+      "claude_haiku": 6,
+      "claude_sonnet55": 2,
+      "deepseek_deepseek-v3.2": 2,
+      "qwen_qwen3.7-plus": 20,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": -0.017241379310344862,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9336206896551724,
+    "best_insample": 0.9655172413793104,
+    "delta": [
+     0.017241379310344827,
+     0.0,
+     0.05172413793103448
+    ],
+    "gain_vs_bestC": [
+     0.011206896551724136,
+     -0.02327586206896552,
+     0.05258620689655172
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9367816091954023,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.06637931034482758,
+    "prize_insample": 0.03448275862068961,
+    "prize_too_small": false,
+    "resample_share": 0.18181818181818166,
+    "s_heldout": 0.22077922077922082,
+    "s_insample": -0.5000000000000017,
+    "usd_per_extra_item": 4.0841783299
+   },
+   "olympiad": {
+    "C0_usd": 0.18021158274444443,
+    "C_usd": 0.36253375785925934,
+    "Cplus": 1,
+    "L": 0,
+    "N": 54,
+    "W": 3,
+    "acc": 1.0,
+    "acc0": 0.9444444444444444,
+    "all_wrong": 1,
+    "bestC_heldout": {
+     "acc": 0.9740740740740741,
+     "picks": {
+      "claude_opus": 27,
+      "claude_sonnet55": 11,
+      "qwen_qwen3.7-plus": 2
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.02344096296296297,
+     "gain": 0.0,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.9379629629629629,
+    "best_insample": 0.9629629629629629,
+    "delta": [
+     0.05555555555555555,
+     0.0,
+     0.12962962962962962
+    ],
+    "gain_vs_bestC": [
+     0.025925925925925925,
+     0.0018518518518518515,
+     0.060185185185185196
+    ],
+    "mcnemar_p": 0.25,
+    "mean_draw": null,
+    "mean_participant": 0.7993827160493827,
+    "oracle": 0.9814814814814815,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.04351851851851862,
+    "prize_insample": 0.0185185185185186,
+    "prize_too_small": false,
+    "resample_share": 1.101694915254237,
+    "s_heldout": 1.4255319148936154,
+    "s_insample": 1.999999999999994,
+    "usd_per_extra_item": 3.2817991520666685
+   },
+   "pooled": {
+    "C0_usd": 0.07297100316872246,
+    "C_usd": 0.18623332793259909,
+    "Cplus": 1,
+    "L": 0,
+    "N": 227,
+    "W": 9,
+    "acc": 0.9691629955947136,
+    "acc0": 0.9295154185022027,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9455947136563877,
+     "picks": {
+      "claude_opus": 17,
+      "claude_sonnet55": 5,
+      "qwen_qwen3.7-plus": 18
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9559471365638766,
+     "cost": 0.02023291629955947,
+     "gain": 0.013215859030836996,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.945374449339207,
+    "best_insample": 0.9515418502202643,
+    "delta": [
+     0.039647577092511016,
+     0.01762114537444934,
+     0.06607929515418502
+    ],
+    "gain_vs_bestC": [
+     0.02356828193832599,
+     0.003083700440528634,
+     0.04493392070484581
+    ],
+    "mcnemar_p": 0.00390625,
+    "mean_draw": null,
+    "mean_participant": 0.8619676945668135,
+    "oracle": 0.9911894273127754,
+    "pool_prize_saturation": 0.03964757709251099,
+    "prize": 0.04581497797356837,
+    "prize_insample": 0.0396475770925111,
+    "prize_too_small": false,
+    "resample_share": 0.8295454545454541,
+    "s_heldout": 0.5192307692307688,
+    "s_insample": 0.44444444444444414,
+    "usd_per_extra_item": 2.8567275245999992
+   }
+  },
+  "moa": {
+   "gpqa-diamond": {
+    "C0_usd": 0.004826273377586207,
+    "C_usd": 0.005415358506896552,
+    "Cplus": 0,
+    "L": 2,
+    "N": 58,
+    "W": 3,
+    "acc": 0.8103448275862069,
+    "acc0": 0.7931034482758621,
+    "all_wrong": 5,
+    "bestC_heldout": {
+     "acc": 0.7948275862068965,
+     "picks": {
+      "deepseek_deepseek-v3.2": 25,
+      "mistralai_mistral-large-2512": 5,
+      "qwen_qwen3.7-plus": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.7758620689655172,
+     "cost": 0.0008879915517241379,
+     "gain": 0.03448275862068961,
+     "model": "deepseek_deepseek-v3.2"
+    },
+    "best_heldout": 0.7741379310344827,
+    "best_insample": 0.8103448275862069,
+    "delta": [
+     0.017241379310344827,
+     -0.05172413793103448,
+     0.08620689655172414
+    ],
+    "gain_vs_bestC": [
+     0.01551724137931034,
+     -0.0603448275862069,
+     0.08965517241379309
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.7551724137931034,
+    "oracle": 0.9137931034482759,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.13965517241379322,
+    "prize_insample": 0.10344827586206906,
+    "prize_too_small": false,
+    "resample_share": 0.3478260869565215,
+    "s_heldout": 0.2592592592592592,
+    "s_insample": 0.0,
+    "usd_per_extra_item": 0.034166937500000015
+   },
+   "gsm-hard": {
+    "C0_usd": 0.0018131997596491233,
+    "C_usd": 0.0022748726403508776,
+    "Cplus": 0,
+    "L": 1,
+    "N": 57,
+    "W": 1,
+    "acc": 0.9298245614035088,
+    "acc0": 0.9298245614035088,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.8999999999999999,
+     "picks": {
+      "deepseek_deepseek-v3.2": 9,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 20,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9473684210526315,
+     "cost": 0.0019550686070175438,
+     "gain": -0.01754385964912275,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.8894736842105264,
+    "best_insample": 0.9122807017543859,
+    "delta": [
+     0.0,
+     -0.05263157894736842,
+     0.05263157894736842
+    ],
+    "gain_vs_bestC": [
+     0.029824561403508774,
+     -0.007894736842105258,
+     0.07807017543859648
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.8947368421052632,
+    "oracle": 0.9649122807017544,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.07543859649122797,
+    "prize_insample": 0.052631578947368474,
+    "prize_too_small": false,
+    "resample_share": 0.5,
+    "s_heldout": 0.534883720930232,
+    "s_insample": 0.33333333333333404,
+    "usd_per_extra_item": null
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.0010778555965517242,
+    "C_usd": 0.00141371145862069,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 1,
+    "acc": 0.9482758620689655,
+    "acc0": 0.9310344827586207,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9301724137931034,
+     "picks": {
+      "deepseek_deepseek-v3.2": 8,
+      "mistralai_mistral-large-2512": 2,
+      "qwen_qwen3.7-plus": 20,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": -0.017241379310344862,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9284482758620691,
+    "best_insample": 0.9655172413793104,
+    "delta": [
+     0.017241379310344827,
+     0.0,
+     0.05172413793103448
+    ],
+    "gain_vs_bestC": [
+     0.018103448275862074,
+     -0.04137931034482759,
+     0.08448275862068964
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9413793103448276,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.07155172413793087,
+    "prize_insample": 0.03448275862068961,
+    "prize_too_small": false,
+    "resample_share": 0.11764705882352963,
+    "s_heldout": 0.2771084337349382,
+    "s_insample": -0.5000000000000017,
+    "usd_per_extra_item": 0.019479640000000017
+   },
+   "olympiad": {
+    "C0_usd": 0.011792250857407406,
+    "C_usd": 0.012671380742592596,
+    "Cplus": 0,
+    "L": 1,
+    "N": 54,
+    "W": 3,
+    "acc": 0.8148148148148148,
+    "acc0": 0.7777777777777778,
+    "all_wrong": 7,
+    "bestC_heldout": {
+     "acc": 0.764814814814815,
+     "picks": {
+      "claude_sonnet55": 4,
+      "deepseek_deepseek-v3.2": 8,
+      "z-ai_glm-5.3-flash": 28
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.7777777777777778,
+     "cost": 0.0076330323222222225,
+     "gain": 0.03703703703703698,
+     "model": "z-ai_glm-5.3-flash"
+    },
+    "best_heldout": 0.6648148148148147,
+    "best_insample": 0.7222222222222222,
+    "delta": [
+     0.037037037037037035,
+     -0.037037037037037035,
+     0.1111111111111111
+    ],
+    "gain_vs_bestC": [
+     0.05,
+     -0.0453935185185185,
+     0.1462962962962963
+    ],
+    "mcnemar_p": 0.625,
+    "mean_draw": null,
+    "mean_participant": 0.6666666666666666,
+    "oracle": 0.8703703703703703,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.2055555555555556,
+    "prize_insample": 0.14814814814814814,
+    "prize_too_small": false,
+    "resample_share": 0.7272727272727272,
+    "s_heldout": 0.7297297297297297,
+    "s_insample": 0.6249999999999998,
+    "usd_per_extra_item": 0.023736506900000134
+   },
+   "pooled": {
+    "C0_usd": 0.004769045872687225,
+    "C_usd": 0.005330433297797357,
+    "Cplus": 0,
+    "L": 4,
+    "N": 227,
+    "W": 8,
+    "acc": 0.8766519823788547,
+    "acc0": 0.8590308370044053,
+    "all_wrong": 14,
+    "bestC_heldout": {
+     "acc": 0.8266519823788545,
+     "picks": {
+      "deepseek_deepseek-v3.2": 19,
+      "z-ai_glm-5.3-flash": 21
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.8458149779735683,
+     "cost": 0.005248399069162996,
+     "gain": 0.03083700440528636,
+     "model": "z-ai_glm-5.3-flash"
+    },
+    "best_heldout": 0.8246696035242291,
+    "best_insample": 0.8414096916299559,
+    "delta": [
+     0.01762114537444934,
+     -0.013215859030837005,
+     0.048458149779735685
+    ],
+    "gain_vs_bestC": [
+     0.04999999999999999,
+     0.012334801762114536,
+     0.08942731277533038
+    ],
+    "mcnemar_p": 0.3876953125,
+    "mean_draw": null,
+    "mean_participant": 0.8167400881057268,
+    "oracle": 0.9383259911894273,
+    "pool_prize_saturation": 0.03964757709251099,
+    "prize": 0.11365638766519814,
+    "prize_insample": 0.09691629955947134,
+    "prize_too_small": false,
+    "resample_share": 0.4927536231884064,
+    "s_heldout": 0.4573643410852715,
+    "s_insample": 0.36363636363636426,
+    "usd_per_extra_item": 0.03185873637499999
+   }
+  },
+  "sc_deepseek_k16": {
+   "gpqa-diamond": {
+    "C0_usd": 0.0008756502689655173,
+    "C_usd": 0.014513976339655173,
+    "Cplus": 0,
+    "L": 2,
+    "N": 58,
+    "W": 5,
+    "acc": 0.8448275862068966,
+    "acc0": 0.7931034482758621,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.9482758620689655,
+     "picks": {
+      "qwen_qwen3.7-plus": 40
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9482758620689655,
+     "cost": 0.006406813903448275,
+     "gain": -0.10344827586206895,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.767241379310345,
+    "best_insample": 0.8448275862068966,
+    "delta": [
+     0.05172413793103448,
+     -0.034482758620689655,
+     0.13793103448275862
+    ],
+    "gain_vs_bestC": [
+     -0.10344827586206896,
+     -0.20689655172413793,
+     0.0
+    ],
+    "mcnemar_p": 0.453125,
+    "mean_draw": 0.7801724137931034,
+    "mean_participant": 0.7780172413793104,
+    "oracle": 0.9310344827586207,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.1637931034482757,
+    "prize_insample": 0.08620689655172409,
+    "prize_too_small": false,
+    "resample_share": 0.43661971830985924,
+    "s_heldout": 0.47368421052631554,
+    "s_insample": 0.0,
+    "usd_per_extra_item": 0.26367430403333336
+   },
+   "gsm-hard": {
+    "C0_usd": 0.0003629700543859649,
+    "C_usd": 0.005995435231578948,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 2,
+    "acc": 0.9122807017543859,
+    "acc0": 0.8771929824561403,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9026315789473685,
+     "picks": {
+      "deepseek_deepseek-v3.2": 6,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 23,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9473684210526315,
+     "cost": 0.001955068607017544,
+     "gain": -0.03508771929824561,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9307017543859648,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.03508771929824561,
+     0.0,
+     0.08771929824561403
+    ],
+    "gain_vs_bestC": [
+     0.009649122807017548,
+     -0.02017543859649122,
+     0.046491228070175444
+    ],
+    "mcnemar_p": 0.5,
+    "mean_draw": 0.8881578947368421,
+    "mean_participant": 0.8881578947368421,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.06929824561403519,
+    "prize_insample": 0.052631578947368474,
+    "prize_too_small": false,
+    "resample_share": 0.21568627450980318,
+    "s_heldout": -0.2658227848101254,
+    "s_insample": -0.666666666666666,
+    "usd_per_extra_item": 0.16052525755000002
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.00019693660172413792,
+    "C_usd": 0.0034364563344827597,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 1,
+    "acc": 0.9482758620689655,
+    "acc0": 0.9310344827586207,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9431034482758621,
+     "picks": {
+      "deepseek_deepseek-v3.2": 3,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 24,
+      "z-ai_glm-5.3-flash": 12
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": -0.017241379310344862,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9646551724137932,
+    "best_insample": 0.9827586206896551,
+    "delta": [
+     0.017241379310344827,
+     0.0,
+     0.05172413793103448
+    ],
+    "gain_vs_bestC": [
+     0.005172413793103449,
+     -0.057780172413793095,
+     0.07071120689655142
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": 0.9407327586206896,
+    "mean_participant": 0.9407327586206896,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.03534482758620683,
+    "prize_insample": 0.017241379310344862,
+    "prize_too_small": false,
+    "resample_share": 0.127272727272728,
+    "s_heldout": -0.4634146341463441,
+    "s_insample": -1.9999999999999936,
+    "usd_per_extra_item": 0.18789214450000005
+   },
+   "olympiad": {
+    "C0_usd": 0.0022851379370370374,
+    "C_usd": 0.03770938126481482,
+    "Cplus": 0,
+    "L": 0,
+    "N": 54,
+    "W": 7,
+    "acc": 0.8333333333333334,
+    "acc0": 0.7037037037037037,
+    "all_wrong": 6,
+    "bestC_heldout": {
+     "acc": 0.9740740740740741,
+     "picks": {
+      "claude_opus": 27,
+      "claude_sonnet55": 11,
+      "qwen_qwen3.7-plus": 2
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.02344096296296297,
+     "gain": -0.16666666666666663,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.6564814814814816,
+    "best_insample": 0.7407407407407407,
+    "delta": [
+     0.12962962962962962,
+     0.05555555555555555,
+     0.2222222222222222
+    ],
+    "gain_vs_bestC": [
+     -0.14074074074074072,
+     -0.23981481481481481,
+     -0.05
+    ],
+    "mcnemar_p": 0.015625,
+    "mean_draw": 0.6620370370370371,
+    "mean_participant": 0.6620370370370371,
+    "oracle": 0.8888888888888888,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.23240740740740728,
+    "prize_insample": 0.14814814814814814,
+    "prize_too_small": false,
+    "resample_share": 0.7551020408163268,
+    "s_heldout": 0.760956175298805,
+    "s_insample": 0.6250000000000006,
+    "usd_per_extra_item": 0.2732727342428572
+   },
+   "pooled": {
+    "C0_usd": 0.0009087963885462556,
+    "C_usd": 0.0150624294784141,
+    "Cplus": 0,
+    "L": 2,
+    "N": 227,
+    "W": 15,
+    "acc": 0.8854625550660793,
+    "acc0": 0.8281938325991189,
+    "all_wrong": 10,
+    "bestC_heldout": {
+     "acc": 0.9453744493392071,
+     "picks": {
+      "claude_sonnet55": 8,
+      "qwen_qwen3.7-plus": 32
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9515418502202643,
+     "cost": 0.007247509223788547,
+     "gain": -0.06607929515418498,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.8477973568281938,
+    "best_insample": 0.8634361233480177,
+    "delta": [
+     0.05726872246696035,
+     0.022026431718061675,
+     0.09251101321585903
+    ],
+    "gain_vs_bestC": [
+     -0.05991189427312776,
+     -0.09999999999999999,
+     -0.022246696035242295
+    ],
+    "mcnemar_p": 0.002349853515625,
+    "mean_draw": 0.8202092511013216,
+    "mean_participant": 0.8196585903083701,
+    "oracle": 0.9559471365638766,
+    "pool_prize_saturation": 0.03964757709251099,
+    "prize": 0.10814977973568285,
+    "prize_insample": 0.09251101321585897,
+    "prize_too_small": false,
+    "resample_share": 0.4828282828282827,
+    "s_heldout": 0.3482688391038699,
+    "s_insample": 0.2380952380952377,
+    "usd_per_extra_item": 0.24714420856923083
+   }
+  },
+  "sc_deepseek_k5": {
+   "gpqa-diamond": {
+    "C0_usd": 0.0008756502689655173,
+    "C_usd": 0.004826273377586207,
+    "Cplus": 0,
+    "L": 3,
+    "N": 58,
+    "W": 3,
+    "acc": 0.7931034482758621,
+    "acc0": 0.7931034482758621,
+    "all_wrong": 5,
+    "bestC_heldout": {
+     "acc": 0.7629310344827587,
+     "picks": {
+      "deepseek_deepseek-v3.2": 37,
+      "mistralai_mistral-large-2512": 3
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.7758620689655172,
+     "cost": 0.0008879915517241381,
+     "gain": 0.017241379310344862,
+     "model": "deepseek_deepseek-v3.2"
+    },
+    "best_heldout": 0.7577586206896553,
+    "best_insample": 0.7931034482758621,
+    "delta": [
+     0.0,
+     -0.08620689655172414,
+     0.08620689655172414
+    ],
+    "gain_vs_bestC": [
+     0.03017241379310345,
+     -0.041379310344827586,
+     0.10258620689655172
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": 0.7801724137931034,
+    "mean_participant": 0.7551724137931034,
+    "oracle": 0.9137931034482759,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.15603448275862064,
+    "prize_insample": 0.12068965517241381,
+    "prize_too_small": false,
+    "resample_share": 0.23913043478260904,
+    "s_heldout": 0.22651933701657423,
+    "s_insample": 0.0,
+    "usd_per_extra_item": null
+   },
+   "gsm-hard": {
+    "C0_usd": 0.0003629700543859649,
+    "C_usd": 0.0018131997596491228,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 3,
+    "acc": 0.9298245614035088,
+    "acc0": 0.8771929824561403,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.8728070175438597,
+     "picks": {
+      "deepseek_deepseek-v3.2": 20,
+      "mistralai_mistral-large-2512": 6,
+      "qwen_qwen3.7-plus": 4,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.8947368421052632,
+     "cost": 0.0003228295824561404,
+     "gain": 0.03508771929824561,
+     "model": "deepseek_deepseek-v3.2"
+    },
+    "best_heldout": 0.9333333333333332,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.05263157894736842,
+     0.0,
+     0.12280701754385964
+    ],
+    "gain_vs_bestC": [
+     0.05701754385964912,
+     0.010526315789473682,
+     0.11317982456140321
+    ],
+    "mcnemar_p": 0.25,
+    "mean_draw": 0.8881578947368421,
+    "mean_participant": 0.8947368421052632,
+    "oracle": 0.9649122807017544,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.03157894736842115,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": false,
+    "resample_share": 0.5,
+    "s_heldout": -0.1111111111111076,
+    "s_insample": -0.9999999999999937,
+    "usd_per_extra_item": 0.027554364400000003
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.00019693660172413792,
+    "C_usd": 0.0010778555965517242,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 0,
+    "acc": 0.9310344827586207,
+    "acc0": 0.9310344827586207,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.911206896551724,
+     "picks": {
+      "deepseek_deepseek-v3.2": 19,
+      "mistralai_mistral-large-2512": 8,
+      "qwen_qwen3.7-plus": 1,
+      "z-ai_glm-5.3-flash": 12
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9137931034482759,
+     "cost": 0.00024982586206896554,
+     "gain": 0.01724137931034475,
+     "model": "deepseek_deepseek-v3.2"
+    },
+    "best_heldout": 0.9646551724137932,
+    "best_insample": 0.9827586206896551,
+    "delta": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gain_vs_bestC": [
+     0.019827586206896553,
+     -0.02415948275862067,
+     0.0663793103448276
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": 0.9407327586206896,
+    "mean_participant": 0.9413793103448276,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.03534482758620683,
+    "prize_insample": 0.017241379310344862,
+    "prize_too_small": false,
+    "resample_share": -0.17647058823529446,
+    "s_heldout": -0.9512195121951265,
+    "s_insample": -2.999999999999994,
+    "usd_per_extra_item": null
+   },
+   "olympiad": {
+    "C0_usd": 0.0022851379370370374,
+    "C_usd": 0.011792250857407408,
+    "Cplus": 0,
+    "L": 0,
+    "N": 54,
+    "W": 4,
+    "acc": 0.7777777777777778,
+    "acc0": 0.7037037037037037,
+    "all_wrong": 7,
+    "bestC_heldout": {
+     "acc": 0.7675925925925925,
+     "picks": {
+      "claude_sonnet55": 2,
+      "deepseek_deepseek-v3.2": 4,
+      "z-ai_glm-5.3-flash": 34
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.7777777777777778,
+     "cost": 0.007633032322222223,
+     "gain": 0.0,
+     "model": "z-ai_glm-5.3-flash"
+    },
+    "best_heldout": 0.6685185185185185,
+    "best_insample": 0.7222222222222222,
+    "delta": [
+     0.07407407407407407,
+     0.018518518518518517,
+     0.14814814814814814
+    ],
+    "gain_vs_bestC": [
+     0.010185185185185183,
+     -0.09537037037037036,
+     0.11576388888888857
+    ],
+    "mcnemar_p": 0.125,
+    "mean_draw": 0.6620370370370371,
+    "mean_participant": 0.6666666666666666,
+    "oracle": 0.8703703703703703,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.20185185185185184,
+    "prize_insample": 0.14814814814814814,
+    "prize_too_small": false,
+    "resample_share": 0.5454545454545456,
+    "s_heldout": 0.5412844036697249,
+    "s_insample": 0.37500000000000017,
+    "usd_per_extra_item": 0.128346024425
+   },
+   "pooled": {
+    "C0_usd": 0.0009087963885462556,
+    "C_usd": 0.004769045872687226,
+    "Cplus": 0,
+    "L": 3,
+    "N": 227,
+    "W": 10,
+    "acc": 0.8590308370044053,
+    "acc0": 0.8281938325991189,
+    "all_wrong": 14,
+    "bestC_heldout": {
+     "acc": 0.8255506607929516,
+     "picks": {
+      "deepseek_deepseek-v3.2": 34,
+      "z-ai_glm-5.3-flash": 6
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.8237885462555066,
+     "cost": 0.0009500075850220266,
+     "gain": 0.03524229074889873,
+     "model": "deepseek_deepseek-v3.2"
+    },
+    "best_heldout": 0.8506607929515418,
+    "best_insample": 0.8634361233480177,
+    "delta": [
+     0.030837004405286344,
+     0.0,
+     0.06167400881057269
+    ],
+    "gain_vs_bestC": [
+     0.033480176211453744,
+     -0.0006607929515418503,
+     0.06784140969162995
+    ],
+    "mcnemar_p": 0.09228515625,
+    "mean_draw": 0.8202092511013216,
+    "mean_participant": 0.8167400881057268,
+    "oracle": 0.9383259911894273,
+    "pool_prize_saturation": 0.03964757709251099,
+    "prize": 0.08766519823788543,
+    "prize_insample": 0.07488986784140961,
+    "prize_too_small": false,
+    "resample_share": 0.3478260869565221,
+    "s_heldout": 0.09547738693467363,
+    "s_insample": -0.05882352941176523,
+    "usd_per_extra_item": 0.12518237612857144
+   }
+  },
+  "sc_glm_k16": {
+   "gpqa-diamond": {
+    "C0_usd": 0.0036619811421052637,
+    "C_usd": 0.05280928420526316,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 4,
+    "acc": 0.9298245614035088,
+    "acc0": 0.8596491228070176,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9342105263157895,
+     "picks": {
+      "claude_opus": 11,
+      "qwen_qwen3.7-plus": 29
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9473684210526315,
+     "cost": 0.0064189312245614034,
+     "gain": -0.01754385964912275,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9228070175438596,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.07017543859649122,
+     0.017543859649122806,
+     0.14035087719298245
+    ],
+    "gain_vs_bestC": [
+     -0.0043859649122807015,
+     -0.07543859649122807,
+     0.06666666666666667
+    ],
+    "mcnemar_p": 0.125,
+    "mean_draw": 0.8983918128654971,
+    "mean_participant": 0.8914473684210527,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03508771929824561,
+    "prize": 0.07719298245614037,
+    "prize_insample": 0.052631578947368474,
+    "prize_too_small": false,
+    "resample_share": 0.3535353535353534,
+    "s_heldout": 0.09090909090909118,
+    "s_insample": -0.3333333333333319,
+    "usd_per_extra_item": 0.70034906865
+   },
+   "gsm-hard": {
+    "C0_usd": 0.00026806046842105263,
+    "C_usd": 0.007347016563157894,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 2,
+    "acc": 0.9473684210526315,
+    "acc0": 0.9122807017543859,
+    "all_wrong": 1,
+    "bestC_heldout": {
+     "acc": 0.9070175438596492,
+     "picks": {
+      "claude_sonnet55": 7,
+      "deepseek_deepseek-v3.2": 6,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 16,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9473684210526315,
+     "cost": 0.001955068607017544,
+     "gain": 0.0,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.8763157894736843,
+    "best_insample": 0.9298245614035088,
+    "delta": [
+     0.03508771929824561,
+     0.0,
+     0.08771929824561403
+    ],
+    "gain_vs_bestC": [
+     0.040350877192982464,
+     0.000877192982456145,
+     0.08947368421052633
+    ],
+    "mcnemar_p": 0.5,
+    "mean_draw": 0.9144736842105263,
+    "mean_participant": 0.9144736842105263,
+    "oracle": 0.9824561403508771,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.10614035087719287,
+    "prize_insample": 0.05263157894736836,
+    "prize_too_small": false,
+    "resample_share": 0.483870967741935,
+    "s_heldout": 0.6694214876033054,
+    "s_insample": 0.33333333333333265,
+    "usd_per_extra_item": 0.2017502487
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.0006161940931034483,
+    "C_usd": 0.008854072029310343,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 1,
+    "acc": 0.9655172413793104,
+    "acc0": 0.9482758620689655,
+    "all_wrong": 1,
+    "bestC_heldout": {
+     "acc": 0.9396551724137931,
+     "picks": {
+      "claude_haiku": 1,
+      "claude_sonnet55": 2,
+      "deepseek_deepseek-v3.2": 3,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 23,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": 0.0,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9586206896551724,
+    "best_insample": 0.9827586206896551,
+    "delta": [
+     0.017241379310344827,
+     0.0,
+     0.05172413793103448
+    ],
+    "gain_vs_bestC": [
+     0.02586206896551724,
+     -0.0025862068965517245,
+     0.06810344827586207
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": 0.9655172413793104,
+    "mean_participant": 0.9655172413793104,
+    "oracle": 0.9827586206896551,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.024137931034482696,
+    "prize_insample": 0.0,
+    "prize_too_small": false,
+    "resample_share": 0.0,
+    "s_heldout": 0.28571428571428703,
+    "s_insample": null,
+    "usd_per_extra_item": 0.47779692029999987
+   },
+   "olympiad": {
+    "C0_usd": 0.0057005314153846165,
+    "C_usd": 0.10181772453461539,
+    "Cplus": 0,
+    "L": 0,
+    "N": 52,
+    "W": 6,
+    "acc": 0.9807692307692307,
+    "acc0": 0.8653846153846154,
+    "all_wrong": 1,
+    "bestC_heldout": {
+     "acc": 0.9701923076923078,
+     "picks": {
+      "claude_opus": 27,
+      "claude_sonnet55": 8,
+      "qwen_qwen3.7-plus": 5
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.023292384615384625,
+     "gain": -0.019230769230769273,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.8403846153846154,
+    "best_insample": 0.9230769230769231,
+    "delta": [
+     0.11538461538461539,
+     0.038461538461538464,
+     0.21153846153846154
+    ],
+    "gain_vs_bestC": [
+     0.010576923076923078,
+     -0.03076923076923077,
+     0.052884615384615384
+    ],
+    "mcnemar_p": 0.03125,
+    "mean_draw": 0.8425480769230769,
+    "mean_participant": 0.8425480769230769,
+    "oracle": 0.9807692307692307,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.14038461538461533,
+    "prize_insample": 0.0576923076923076,
+    "prize_too_small": false,
+    "resample_share": 1.0,
+    "s_heldout": 1.0,
+    "s_insample": 1.0,
+    "usd_per_extra_item": 0.8330156737000001
+   },
+   "pooled": {
+    "C0_usd": 0.0024829431375,
+    "C_usd": 0.04123645980937501,
+    "Cplus": 0,
+    "L": 0,
+    "N": 224,
+    "W": 13,
+    "acc": 0.9553571428571429,
+    "acc0": 0.8973214285714286,
+    "all_wrong": 3,
+    "bestC_heldout": {
+     "acc": 0.9415178571428572,
+     "picks": {
+      "claude_opus": 15,
+      "claude_sonnet55": 9,
+      "qwen_qwen3.7-plus": 16
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9553571428571429,
+     "cost": 0.020129410714285718,
+     "gain": 0.0,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.8921875000000001,
+    "best_insample": 0.9241071428571429,
+    "delta": [
+     0.05803571428571429,
+     0.03125,
+     0.08928571428571429
+    ],
+    "gain_vs_bestC": [
+     0.013839285714285715,
+     -0.012499999999999999,
+     0.04017857142857143
+    ],
+    "mcnemar_p": 0.000244140625,
+    "mean_draw": 0.9069010416666667,
+    "mean_participant": 0.9051339285714286,
+    "oracle": 0.9866071428571429,
+    "pool_prize_saturation": 0.0401785714285714,
+    "prize": 0.09441964285714277,
+    "prize_insample": 0.0625,
+    "prize_too_small": false,
+    "resample_share": 0.6164383561643836,
+    "s_heldout": 0.6690307328605198,
+    "s_insample": 0.5,
+    "usd_per_extra_item": 0.6677529026538462
+   }
+  },
+  "sc_glm_k5": {
+   "gpqa-diamond": {
+    "C0_usd": 0.0036619811421052637,
+    "C_usd": 0.01811344050526316,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 4,
+    "acc": 0.9298245614035088,
+    "acc0": 0.8596491228070176,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9464912280701755,
+     "picks": {
+      "claude_opus": 1,
+      "qwen_qwen3.7-plus": 39
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9473684210526315,
+     "cost": 0.0064189312245614034,
+     "gain": -0.01754385964912275,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9473684210526315,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.07017543859649122,
+     0.017543859649122806,
+     0.14035087719298245
+    ],
+    "gain_vs_bestC": [
+     -0.016666666666666666,
+     -0.08771929824561403,
+     0.054385964912280704
+    ],
+    "mcnemar_p": 0.125,
+    "mean_draw": 0.8983918128654971,
+    "mean_participant": 0.8947368421052632,
+    "oracle": 0.9649122807017544,
+    "pool_prize_saturation": 0.03508771929824561,
+    "prize": 0.01754385964912286,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": true,
+    "resample_share": 0.5,
+    "s_heldout": -0.9999999999999937,
+    "s_insample": -0.9999999999999937,
+    "usd_per_extra_item": 0.20593329592500004
+   },
+   "gsm-hard": {
+    "C0_usd": 0.00026806046842105263,
+    "C_usd": 0.0029500322894736846,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 1,
+    "acc": 0.9298245614035088,
+    "acc0": 0.9122807017543859,
+    "all_wrong": 3,
+    "bestC_heldout": {
+     "acc": 0.8947368421052632,
+     "picks": {
+      "deepseek_deepseek-v3.2": 8,
+      "mistralai_mistral-large-2512": 2,
+      "qwen_qwen3.7-plus": 20,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9473684210526315,
+     "cost": 0.001955068607017544,
+     "gain": -0.01754385964912275,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.8903508771929824,
+    "best_insample": 0.9122807017543859,
+    "delta": [
+     0.017543859649122806,
+     0.0,
+     0.05263157894736842
+    ],
+    "gain_vs_bestC": [
+     0.03508771929824561,
+     -0.021929824561403508,
+     0.09473684210526316
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": 0.9144736842105263,
+    "mean_participant": 0.9017543859649123,
+    "oracle": 0.9473684210526315,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.05701754385964908,
+    "prize_insample": 0.03508771929824561,
+    "prize_too_small": false,
+    "resample_share": 0.615384615384616,
+    "s_heldout": 0.6923076923076931,
+    "s_insample": 0.5000000000000016,
+    "usd_per_extra_item": 0.15287239380000003
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.0006161940931034483,
+    "C_usd": 0.00286826505,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 1,
+    "acc": 0.9655172413793104,
+    "acc0": 0.9482758620689655,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9431034482758621,
+     "picks": {
+      "deepseek_deepseek-v3.2": 3,
+      "mistralai_mistral-large-2512": 1,
+      "qwen_qwen3.7-plus": 24,
+      "z-ai_glm-5.3-flash": 12
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": 0.0,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9482758620689655,
+    "best_insample": 0.9655172413793104,
+    "delta": [
+     0.017241379310344827,
+     0.0,
+     0.05172413793103448
+    ],
+    "gain_vs_bestC": [
+     0.022413793103448276,
+     -0.004310344827586207,
+     0.06379310344827586
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": 0.9655172413793104,
+    "mean_participant": 0.9551724137931035,
+    "oracle": 0.9655172413793104,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.017241379310344862,
+    "prize_insample": 0.0,
+    "prize_too_small": true,
+    "resample_share": 1.0,
+    "s_heldout": 1.0,
+    "s_insample": null,
+    "usd_per_extra_item": 0.1306201155
+   },
+   "olympiad": {
+    "C0_usd": 0.0057005314153846165,
+    "C_usd": 0.03224763230769231,
+    "Cplus": 0,
+    "L": 0,
+    "N": 52,
+    "W": 5,
+    "acc": 0.9615384615384616,
+    "acc0": 0.8653846153846154,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9692307692307692,
+     "picks": {
+      "claude_opus": 26,
+      "claude_sonnet55": 9,
+      "qwen_qwen3.7-plus": 5
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.023292384615384625,
+     "gain": -0.038461538461538436,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.839423076923077,
+    "best_insample": 0.8846153846153846,
+    "delta": [
+     0.09615384615384616,
+     0.019230769230769232,
+     0.17307692307692307
+    ],
+    "gain_vs_bestC": [
+     -0.007692307692307693,
+     -0.07211538461538461,
+     0.045192307692307684
+    ],
+    "mcnemar_p": 0.0625,
+    "mean_draw": 0.8425480769230769,
+    "mean_participant": 0.8346153846153846,
+    "oracle": 0.9615384615384616,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.12211538461538451,
+    "prize_insample": 0.07692307692307698,
+    "prize_too_small": false,
+    "resample_share": 1.0,
+    "s_heldout": 1.0,
+    "s_insample": 1.0,
+    "usd_per_extra_item": 0.27608984927999997
+   },
+   "pooled": {
+    "C0_usd": 0.0024829431375,
+    "C_usd": 0.013588634831250002,
+    "Cplus": 0,
+    "L": 0,
+    "N": 224,
+    "W": 11,
+    "acc": 0.9464285714285714,
+    "acc0": 0.8973214285714286,
+    "all_wrong": 9,
+    "bestC_heldout": {
+     "acc": 0.9415178571428572,
+     "picks": {
+      "claude_sonnet55": 11,
+      "qwen_qwen3.7-plus": 29
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9508928571428571,
+     "cost": 0.006740144758928571,
+     "gain": -0.004464285714285698,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.8872767857142857,
+    "best_insample": 0.90625,
+    "delta": [
+     0.049107142857142856,
+     0.022321428571428572,
+     0.08035714285714286
+    ],
+    "gain_vs_bestC": [
+     0.0049107142857142865,
+     -0.024330357142857143,
+     0.033928571428571426
+    ],
+    "mcnemar_p": 0.0009765625,
+    "mean_draw": 0.9069010416666667,
+    "mean_participant": 0.8982142857142857,
+    "oracle": 0.9598214285714286,
+    "pool_prize_saturation": 0.0401785714285714,
+    "prize": 0.0725446428571429,
+    "prize_insample": 0.0535714285714286,
+    "prize_too_small": false,
+    "resample_share": 0.782608695652173,
+    "s_heldout": 0.8153846153846146,
+    "s_insample": 0.749999999999999,
+    "usd_per_extra_item": 0.22615226721818185
+   }
+  },
+  "sc_haiku_k16": {
+   "gsm-hard": {
+    "C0_usd": 0.009598754385964914,
+    "C_usd": 0.14777729824561406,
+    "Cplus": 0,
+    "L": 2,
+    "N": 57,
+    "W": 2,
+    "acc": 0.8947368421052632,
+    "acc0": 0.8947368421052632,
+    "all_wrong": 3,
+    "bestC_heldout": {
+     "acc": 0.9307017543859648,
+     "picks": {
+      "claude_sonnet55": 23,
+      "deepseek_deepseek-v3.2": 6,
+      "qwen_qwen3.7-plus": 8,
+      "z-ai_glm-5.3-flash": 3
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9824561403508771,
+     "cost": 0.009060526315789475,
+     "gain": -0.08771929824561397,
+     "model": "claude_sonnet55"
+    },
+    "best_heldout": 0.8947368421052632,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     0.0,
+     -0.07017543859649122,
+     0.07017543859649122
+    ],
+    "gain_vs_bestC": [
+     -0.03596491228070175,
+     -0.10087719298245613,
+     0.017543859649122806
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": 0.8947368421052632,
+    "mean_participant": 0.8947368421052632,
+    "oracle": 0.9473684210526315,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.05263157894736836,
+    "prize_insample": 0.0,
+    "prize_too_small": false,
+    "resample_share": 0.0,
+    "s_heldout": 0.0,
+    "s_insample": null,
+    "usd_per_extra_item": null
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.010471672413793104,
+    "C_usd": 0.16780987931034483,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 2,
+    "acc": 0.9310344827586207,
+    "acc0": 0.896551724137931,
+    "all_wrong": 1,
+    "bestC_heldout": {
+     "acc": 0.9370689655172413,
+     "picks": {
+      "claude_haiku": 6,
+      "claude_sonnet55": 2,
+      "deepseek_deepseek-v3.2": 2,
+      "qwen_qwen3.7-plus": 20,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": -0.034482758620689724,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9310344827586207,
+    "best_insample": 0.9655172413793104,
+    "delta": [
+     0.034482758620689655,
+     0.0,
+     0.08620689655172414
+    ],
+    "gain_vs_bestC": [
+     -0.0060344827586206904,
+     -0.049999999999999996,
+     0.03793103448275863
+    ],
+    "mcnemar_p": 0.5,
+    "mean_draw": 0.9320402298850575,
+    "mean_participant": 0.9310344827586207,
+    "oracle": 0.9827586206896551,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.051724137931034475,
+    "prize_insample": 0.01724137931034475,
+    "prize_too_small": false,
+    "resample_share": 0.0,
+    "s_heldout": 0.0,
+    "s_insample": -2.000000000000013,
+    "usd_per_extra_item": 4.562808
+   },
+   "pooled": {
+    "C0_usd": 0.010792264957264958,
+    "C_usd": 0.17062146153846158,
+    "Cplus": 0,
+    "L": 2,
+    "N": 117,
+    "W": 4,
+    "acc": 0.9145299145299145,
+    "acc0": 0.8974358974358975,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.9405982905982905,
+     "picks": {
+      "claude_sonnet55": 19,
+      "deepseek_deepseek-v3.2": 3,
+      "qwen_qwen3.7-plus": 16,
+      "z-ai_glm-5.3-flash": 2
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9658119658119658,
+     "cost": 0.008942324786324786,
+     "gain": -0.05128205128205132,
+     "model": "claude_sonnet55"
+    },
+    "best_heldout": 0.9094017094017095,
+    "best_insample": 0.9401709401709402,
+    "delta": [
+     0.017094017094017096,
+     -0.02564102564102564,
+     0.05982905982905983
+    ],
+    "gain_vs_bestC": [
+     -0.026068376068376066,
+     -0.06495726495726495,
+     0.007264957264957268
+    ],
+    "mcnemar_p": 0.6875,
+    "mean_draw": 0.9150284900284901,
+    "mean_participant": 0.9145299145299145,
+    "oracle": 0.9658119658119658,
+    "pool_prize_saturation": 0.03418803418803418,
+    "prize": 0.05641025641025632,
+    "prize_insample": 0.02564102564102566,
+    "prize_too_small": false,
+    "resample_share": 0.0,
+    "s_heldout": 0.09090909090908876,
+    "s_insample": -1.0,
+    "usd_per_extra_item": 9.350008
+   }
+  },
+  "sc_haiku_k5": {
+   "gpqa-diamond": {
+    "C0_usd": 0.03975931034482759,
+    "C_usd": 0.2091629655172414,
+    "Cplus": 0,
+    "L": 2,
+    "N": 58,
+    "W": 4,
+    "acc": 0.7758620689655172,
+    "acc0": 0.7413793103448276,
+    "all_wrong": 3,
+    "bestC_heldout": {
+     "acc": 0.9353448275862069,
+     "picks": {
+      "claude_opus": 15,
+      "qwen_qwen3.7-plus": 25
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9482758620689655,
+     "cost": 0.006406813903448275,
+     "gain": -0.1724137931034483,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.7137931034482758,
+    "best_insample": 0.7586206896551724,
+    "delta": [
+     0.034482758620689655,
+     -0.05172413793103448,
+     0.1206896551724138
+    ],
+    "gain_vs_bestC": [
+     -0.15948275862068967,
+     -0.26206896551724135,
+     -0.06379310344827586
+    ],
+    "mcnemar_p": 0.6875,
+    "mean_draw": 0.7306034482758621,
+    "mean_participant": 0.7310344827586207,
+    "oracle": 0.9482758620689655,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.23448275862068968,
+    "prize_insample": 0.18965517241379315,
+    "prize_too_small": false,
+    "resample_share": 0.20634920634920625,
+    "s_heldout": 0.2647058823529412,
+    "s_insample": 0.09090909090909106,
+    "usd_per_extra_item": 4.912706
+   },
+   "gsm-hard": {
+    "C0_usd": 0.009598754385964914,
+    "C_usd": 0.04606164912280702,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 2,
+    "acc": 0.9298245614035088,
+    "acc0": 0.8947368421052632,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.9307017543859648,
+     "picks": {
+      "claude_sonnet55": 23,
+      "deepseek_deepseek-v3.2": 6,
+      "qwen_qwen3.7-plus": 8,
+      "z-ai_glm-5.3-flash": 3
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9824561403508771,
+     "cost": 0.009060526315789475,
+     "gain": -0.05263157894736836,
+     "model": "claude_sonnet55"
+    },
+    "best_heldout": 0.8728070175438597,
+    "best_insample": 0.9122807017543859,
+    "delta": [
+     0.03508771929824561,
+     0.0,
+     0.08771929824561403
+    ],
+    "gain_vs_bestC": [
+     -0.0008771929824561411,
+     -0.056140350877192984,
+     0.04736842105263158
+    ],
+    "mcnemar_p": 0.5,
+    "mean_draw": 0.8947368421052632,
+    "mean_participant": 0.887719298245614,
+    "oracle": 0.9298245614035088,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.05701754385964908,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": false,
+    "resample_share": 1.0,
+    "s_heldout": 1.0,
+    "s_insample": 1.0,
+    "usd_per_extra_item": 1.0391925
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.010471672413793104,
+    "C_usd": 0.05062032758620689,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 2,
+    "acc": 0.9310344827586207,
+    "acc0": 0.896551724137931,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9370689655172413,
+     "picks": {
+      "claude_haiku": 6,
+      "claude_sonnet55": 2,
+      "deepseek_deepseek-v3.2": 2,
+      "qwen_qwen3.7-plus": 20,
+      "z-ai_glm-5.3-flash": 10
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931033,
+     "gain": -0.034482758620689724,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9370689655172414,
+    "best_insample": 0.9482758620689655,
+    "delta": [
+     0.034482758620689655,
+     0.0,
+     0.08620689655172414
+    ],
+    "gain_vs_bestC": [
+     -0.006034482758620695,
+     -0.06896551724137931,
+     0.0603448275862069
+    ],
+    "mcnemar_p": 0.5,
+    "mean_draw": 0.9320402298850575,
+    "mean_participant": 0.9241379310344827,
+    "oracle": 0.9655172413793104,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.028448275862068995,
+    "prize_insample": 0.017241379310344862,
+    "prize_too_small": false,
+    "resample_share": 0.16666666666666666,
+    "s_heldout": -0.2121212121212133,
+    "s_insample": -1.0,
+    "usd_per_extra_item": 1.1643109999999997
+   },
+   "olympiad": {
+    "C0_usd": 0.12670761538461542,
+    "C_usd": 0.5868378076923079,
+    "Cplus": 0,
+    "L": 0,
+    "N": 52,
+    "W": 5,
+    "acc": 0.9038461538461539,
+    "acc0": 0.8076923076923077,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.973076923076923,
+     "picks": {
+      "claude_opus": 28,
+      "claude_sonnet55": 8,
+      "qwen_qwen3.7-plus": 4
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.023350000000000006,
+     "gain": -0.09615384615384615,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.8298076923076922,
+    "best_insample": 0.8653846153846154,
+    "delta": [
+     0.09615384615384616,
+     0.019230769230769232,
+     0.19230769230769232
+    ],
+    "gain_vs_bestC": [
+     -0.06923076923076922,
+     -0.1423076923076923,
+     -0.007692307692307693
+    ],
+    "mcnemar_p": 0.0625,
+    "mean_draw": 0.8533653846153846,
+    "mean_participant": 0.8423076923076923,
+    "oracle": 0.9230769230769231,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.09326923076923088,
+    "prize_insample": 0.05769230769230771,
+    "prize_too_small": false,
+    "resample_share": 0.7619047619047615,
+    "s_heldout": 0.7938144329896906,
+    "s_insample": 0.6666666666666661,
+    "usd_per_extra_item": 4.785354000000002
+   },
+   "pooled": {
+    "C0_usd": 0.04466365333333333,
+    "C_usd": 0.21426004888888892,
+    "Cplus": 0,
+    "L": 2,
+    "N": 225,
+    "W": 13,
+    "acc": 0.8844444444444445,
+    "acc0": 0.8355555555555556,
+    "all_wrong": 13,
+    "bestC_heldout": {
+     "acc": 0.9468888888888888,
+     "picks": {
+      "claude_opus": 19,
+      "claude_sonnet55": 2,
+      "qwen_qwen3.7-plus": 19
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9555555555555556,
+     "cost": 0.02018337777777778,
+     "gain": -0.07111111111111112,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.834888888888889,
+    "best_insample": 0.8577777777777778,
+    "delta": [
+     0.04888888888888889,
+     0.017777777777777778,
+     0.08444444444444445
+    ],
+    "gain_vs_bestC": [
+     -0.06244444444444444,
+     -0.09845000000000001,
+     -0.027999999999999994
+    ],
+    "mcnemar_p": 0.00738525390625,
+    "mean_draw": 0.8524814814814815,
+    "mean_participant": 0.8462222222222222,
+    "oracle": 0.9422222222222222,
+    "pool_prize_saturation": 0.039999999999999925,
+    "prize": 0.10733333333333317,
+    "prize_insample": 0.08444444444444443,
+    "prize_too_small": false,
+    "resample_share": 0.39814814814814875,
+    "s_heldout": 0.46169772256728764,
+    "s_insample": 0.3157894736842113,
+    "usd_per_extra_item": 3.4690171818181823
+   }
+  },
+  "synth": {
+   "gpqa-diamond": {
+    "C0_usd": 0.20514913189999998,
+    "C_usd": 0.20628948281754386,
+    "Cplus": 0,
+    "L": 0,
+    "N": 57,
+    "W": 0,
+    "acc": 1.0,
+    "acc0": 1.0,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9517543859649122,
+     "picks": {
+      "claude_opus": 11,
+      "qwen_qwen3.7-plus": 29
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9649122807017544,
+     "cost": 0.00630670721754386,
+     "gain": 0.03508771929824561,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9649122807017544,
+    "best_insample": 1.0,
+    "delta": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gain_vs_bestC": [
+     0.04824561403508772,
+     0.007017543859649123,
+     0.10350877192982456
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9824561403508771,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.03508771929824561,
+    "prize": 0.03508771929824561,
+    "prize_insample": 0.0,
+    "prize_too_small": false,
+    "resample_share": 1.0,
+    "s_heldout": 1.0,
+    "s_insample": null,
+    "usd_per_extra_item": null
+   },
+   "gsm-hard": {
+    "C0_usd": 0.09003738933333333,
+    "C_usd": 0.09063311766666667,
+    "Cplus": 0,
+    "L": 1,
+    "N": 57,
+    "W": 0,
+    "acc": 0.9298245614035088,
+    "acc0": 0.9473684210526315,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9552631578947369,
+     "picks": {
+      "claude_sonnet55": 29,
+      "deepseek_deepseek-v3.2": 3,
+      "qwen_qwen3.7-plus": 8
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9824561403508771,
+     "cost": 0.009060526315789474,
+     "gain": -0.05263157894736836,
+     "model": "claude_sonnet55"
+    },
+    "best_heldout": 0.9403508771929825,
+    "best_insample": 0.9473684210526315,
+    "delta": [
+     -0.017543859649122806,
+     -0.05263157894736842,
+     0.0
+    ],
+    "gain_vs_bestC": [
+     -0.025438596491228073,
+     -0.06842105263157895,
+     0.007017543859649123
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9444444444444444,
+    "oracle": 0.9649122807017544,
+    "pool_prize_saturation": 0.01754385964912286,
+    "prize": 0.024561403508771895,
+    "prize_insample": 0.01754385964912286,
+    "prize_too_small": false,
+    "resample_share": -0.714285714285712,
+    "s_heldout": -0.4285714285714305,
+    "s_insample": -0.9999999999999937,
+    "usd_per_extra_item": null
+   },
+   "mmlu-pro": {
+    "C0_usd": 0.09381582447586205,
+    "C_usd": 0.09421405764827585,
+    "Cplus": 0,
+    "L": 0,
+    "N": 58,
+    "W": 0,
+    "acc": 0.9482758620689655,
+    "acc0": 0.9482758620689655,
+    "all_wrong": 2,
+    "bestC_heldout": {
+     "acc": 0.9344827586206897,
+     "picks": {
+      "claude_haiku": 1,
+      "claude_sonnet55": 3,
+      "deepseek_deepseek-v3.2": 7,
+      "qwen_qwen3.7-plus": 24,
+      "z-ai_glm-5.3-flash": 5
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9655172413793104,
+     "cost": 0.0013017403137931035,
+     "gain": -0.017241379310344862,
+     "model": "qwen_qwen3.7-plus"
+    },
+    "best_heldout": 0.9482758620689655,
+    "best_insample": 0.9655172413793104,
+    "delta": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gain_vs_bestC": [
+     0.013793103448275867,
+     -0.025,
+     0.0603448275862069
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9540229885057471,
+    "oracle": 0.9655172413793104,
+    "pool_prize_saturation": 0.03448275862068961,
+    "prize": 0.017241379310344862,
+    "prize_insample": 0.0,
+    "prize_too_small": true,
+    "resample_share": -0.49999999999999034,
+    "s_heldout": 0.0,
+    "s_insample": null,
+    "usd_per_extra_item": null
+   },
+   "olympiad": {
+    "C0_usd": 0.3625337578592592,
+    "C_usd": 0.3637300221462963,
+    "Cplus": 0,
+    "L": 0,
+    "N": 54,
+    "W": 0,
+    "acc": 1.0,
+    "acc0": 1.0,
+    "all_wrong": 0,
+    "bestC_heldout": {
+     "acc": 0.9787037037037036,
+     "picks": {
+      "claude_opus": 29,
+      "claude_sonnet55": 10,
+      "qwen_qwen3.7-plus": 1
+     }
+    },
+    "bestC_insample": {
+     "acc": 1.0,
+     "cost": 0.023440962962962966,
+     "gain": 0.0,
+     "model": "claude_opus"
+    },
+    "best_heldout": 1.0,
+    "best_insample": 1.0,
+    "delta": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "gain_vs_bestC": [
+     0.0212962962962963,
+     0.0009259259259259267,
+     0.05092592592592592
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.9907407407407407,
+    "oracle": 1.0,
+    "pool_prize_saturation": 0.0,
+    "prize": 0.0,
+    "prize_insample": 0.0,
+    "prize_too_small": true,
+    "resample_share": 1.0,
+    "s_heldout": null,
+    "s_insample": null,
+    "usd_per_extra_item": null
+   },
+   "pooled": {
+    "C0_usd": 0.18514943563849556,
+    "C_usd": 0.18597533082787612,
+    "Cplus": 0,
+    "L": 1,
+    "N": 226,
+    "W": 0,
+    "acc": 0.9690265486725663,
+    "acc0": 0.9734513274336283,
+    "all_wrong": 4,
+    "bestC_heldout": {
+     "acc": 0.9502212389380531,
+     "picks": {
+      "claude_opus": 19,
+      "claude_sonnet55": 3,
+      "qwen_qwen3.7-plus": 18
+     }
+    },
+    "bestC_insample": {
+     "acc": 0.9601769911504425,
+     "cost": 0.0201681592920354,
+     "gain": 0.008849557522123797,
+     "model": "claude_opus"
+    },
+    "best_heldout": 0.9623893805309734,
+    "best_insample": 0.9734513274336283,
+    "delta": [
+     -0.004424778761061947,
+     -0.01327433628318584,
+     0.0
+    ],
+    "gain_vs_bestC": [
+     0.018805309734513276,
+     -0.003102876106194686,
+     0.041371681415929194
+    ],
+    "mcnemar_p": 1.0,
+    "mean_draw": null,
+    "mean_participant": 0.967551622418879,
+    "oracle": 0.9823008849557522,
+    "pool_prize_saturation": 0.03982300884955747,
+    "prize": 0.019911504424778736,
+    "prize_insample": 0.008849557522123908,
+    "prize_too_small": true,
+    "resample_share": 0.09999999999999774,
+    "s_heldout": 0.3333333333333315,
+    "s_insample": -0.5,
+    "usd_per_extra_item": null
+   }
+  }
+ }
+}

@@ -1,0 +1,722 @@
+{
+ "mmlu-pro | all | P6": {
+  "N": 553,
+  "weakest": 0.8571428571428571,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.9602169981916817,
+  "best_model": "claude_opus",
+  "oracle": 0.9963833634719711,
+  "prize": 0.03616636528028938,
+  "passes": false
+ },
+ "mmlu-pro | biology | P6": {
+  "N": 41,
+  "weakest": 0.9512195121951219,
+  "weakest_model": "claude_haiku",
+  "best": 0.975609756097561,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 1.0,
+  "prize": 0.024390243902439046,
+  "passes": false
+ },
+ "mmlu-pro | business | P6": {
+  "N": 40,
+  "weakest": 0.85,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.975,
+  "best_model": "claude_sonnet55",
+  "oracle": 1.0,
+  "prize": 0.025000000000000022,
+  "passes": false
+ },
+ "mmlu-pro | chemistry | P6": {
+  "N": 40,
+  "weakest": 0.9,
+  "weakest_model": "z-ai_glm-5.3-flash",
+  "best": 1.0,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | computer science | P6": {
+  "N": 41,
+  "weakest": 0.8780487804878049,
+  "weakest_model": "claude_haiku",
+  "best": 1.0,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | economics | P6": {
+  "N": 39,
+  "weakest": 0.8974358974358975,
+  "weakest_model": "claude_haiku",
+  "best": 0.9743589743589743,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.02564102564102566,
+  "passes": false
+ },
+ "mmlu-pro | engineering | P6": {
+  "N": 40,
+  "weakest": 0.7,
+  "weakest_model": "z-ai_glm-5.3-flash",
+  "best": 0.925,
+  "best_model": "claude_opus",
+  "oracle": 0.975,
+  "prize": 0.04999999999999993,
+  "passes": false
+ },
+ "mmlu-pro | health | P6": {
+  "N": 38,
+  "weakest": 0.8947368421052632,
+  "weakest_model": "claude_haiku",
+  "best": 1.0,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | history | P6": {
+  "N": 40,
+  "weakest": 0.725,
+  "weakest_model": "claude_haiku",
+  "best": 0.95,
+  "best_model": "claude_opus",
+  "oracle": 0.975,
+  "prize": 0.025000000000000022,
+  "passes": false
+ },
+ "mmlu-pro | law | P6": {
+  "N": 37,
+  "weakest": 0.5675675675675675,
+  "weakest_model": "claude_haiku",
+  "best": 0.9459459459459459,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.05405405405405406,
+  "passes": true
+ },
+ "mmlu-pro | math | P6": {
+  "N": 42,
+  "weakest": 0.9761904761904762,
+  "weakest_model": "claude_haiku",
+  "best": 1.0,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | other | P6": {
+  "N": 40,
+  "weakest": 0.8,
+  "weakest_model": "claude_haiku",
+  "best": 0.95,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.050000000000000044,
+  "passes": true
+ },
+ "mmlu-pro | philosophy | P6": {
+  "N": 34,
+  "weakest": 0.6764705882352942,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.9117647058823529,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.08823529411764708,
+  "passes": true
+ },
+ "mmlu-pro | physics | P6": {
+  "N": 41,
+  "weakest": 0.926829268292683,
+  "weakest_model": "claude_sonnet55",
+  "best": 0.9512195121951219,
+  "best_model": "claude_haiku",
+  "oracle": 1.0,
+  "prize": 0.04878048780487809,
+  "passes": false
+ },
+ "mmlu-pro | psychology | P6": {
+  "N": 40,
+  "weakest": 0.8,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.925,
+  "best_model": "claude_haiku",
+  "oracle": 1.0,
+  "prize": 0.07499999999999996,
+  "passes": true
+ },
+ "mmlu-pro | all | W3": {
+  "N": 553,
+  "weakest": 0.8571428571428571,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.8661844484629295,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.9439421338155516,
+  "prize": 0.07775768535262206,
+  "passes": false
+ },
+ "mmlu-pro | biology | W3": {
+  "N": 41,
+  "weakest": 0.9512195121951219,
+  "weakest_model": "claude_haiku",
+  "best": 0.975609756097561,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.975609756097561,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | business | W3": {
+  "N": 40,
+  "weakest": 0.85,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.95,
+  "best_model": "claude_haiku",
+  "oracle": 0.975,
+  "prize": 0.025000000000000022,
+  "passes": false
+ },
+ "mmlu-pro | chemistry | W3": {
+  "N": 40,
+  "weakest": 0.9,
+  "weakest_model": "z-ai_glm-5.3-flash",
+  "best": 0.95,
+  "best_model": "claude_haiku",
+  "oracle": 0.95,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | computer science | W3": {
+  "N": 41,
+  "weakest": 0.8780487804878049,
+  "weakest_model": "claude_haiku",
+  "best": 0.926829268292683,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.975609756097561,
+  "prize": 0.04878048780487798,
+  "passes": false
+ },
+ "mmlu-pro | economics | W3": {
+  "N": 39,
+  "weakest": 0.8974358974358975,
+  "weakest_model": "claude_haiku",
+  "best": 0.9487179487179487,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9743589743589743,
+  "prize": 0.02564102564102566,
+  "passes": false
+ },
+ "mmlu-pro | engineering | W3": {
+  "N": 40,
+  "weakest": 0.7,
+  "weakest_model": "z-ai_glm-5.3-flash",
+  "best": 0.85,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9,
+  "prize": 0.050000000000000044,
+  "passes": true
+ },
+ "mmlu-pro | health | W3": {
+  "N": 38,
+  "weakest": 0.8947368421052632,
+  "weakest_model": "claude_haiku",
+  "best": 0.9210526315789473,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.9473684210526315,
+  "prize": 0.02631578947368418,
+  "passes": false
+ },
+ "mmlu-pro | history | W3": {
+  "N": 40,
+  "weakest": 0.725,
+  "weakest_model": "claude_haiku",
+  "best": 0.775,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.875,
+  "prize": 0.09999999999999998,
+  "passes": true
+ },
+ "mmlu-pro | law | W3": {
+  "N": 37,
+  "weakest": 0.5675675675675675,
+  "weakest_model": "claude_haiku",
+  "best": 0.7297297297297297,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.8378378378378378,
+  "prize": 0.10810810810810811,
+  "passes": true
+ },
+ "mmlu-pro | math | W3": {
+  "N": 42,
+  "weakest": 0.9761904761904762,
+  "weakest_model": "claude_haiku",
+  "best": 1.0,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 1.0,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | other | W3": {
+  "N": 40,
+  "weakest": 0.8,
+  "weakest_model": "claude_haiku",
+  "best": 0.875,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.925,
+  "prize": 0.050000000000000044,
+  "passes": true
+ },
+ "mmlu-pro | philosophy | W3": {
+  "N": 34,
+  "weakest": 0.6764705882352942,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.8235294117647058,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.9411764705882353,
+  "prize": 0.11764705882352944,
+  "passes": true
+ },
+ "mmlu-pro | physics | W3": {
+  "N": 41,
+  "weakest": 0.926829268292683,
+  "weakest_model": "z-ai_glm-5.3-flash",
+  "best": 0.9512195121951219,
+  "best_model": "claude_haiku",
+  "oracle": 0.9512195121951219,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | psychology | W3": {
+  "N": 40,
+  "weakest": 0.8,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.925,
+  "best_model": "claude_haiku",
+  "oracle": 0.975,
+  "prize": 0.04999999999999993,
+  "passes": false
+ },
+ "mmlu-pro | all | W2": {
+  "N": 553,
+  "weakest": 0.8571428571428571,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.864376130198915,
+  "best_model": "claude_haiku",
+  "oracle": 0.9132007233273056,
+  "prize": 0.0488245931283906,
+  "passes": false
+ },
+ "mmlu-pro | biology | W2": {
+  "N": 41,
+  "weakest": 0.9512195121951219,
+  "weakest_model": "claude_haiku",
+  "best": 0.975609756097561,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.975609756097561,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | business | W2": {
+  "N": 40,
+  "weakest": 0.85,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.95,
+  "best_model": "claude_haiku",
+  "oracle": 0.95,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | chemistry | W2": {
+  "N": 40,
+  "weakest": 0.925,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.95,
+  "best_model": "claude_haiku",
+  "oracle": 0.95,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | computer science | W2": {
+  "N": 41,
+  "weakest": 0.8780487804878049,
+  "weakest_model": "claude_haiku",
+  "best": 0.926829268292683,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.975609756097561,
+  "prize": 0.04878048780487798,
+  "passes": false
+ },
+ "mmlu-pro | economics | W2": {
+  "N": 39,
+  "weakest": 0.8974358974358975,
+  "weakest_model": "claude_haiku",
+  "best": 0.9487179487179487,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9743589743589743,
+  "prize": 0.02564102564102566,
+  "passes": false
+ },
+ "mmlu-pro | engineering | W2": {
+  "N": 40,
+  "weakest": 0.8,
+  "weakest_model": "claude_haiku",
+  "best": 0.85,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9,
+  "prize": 0.050000000000000044,
+  "passes": true
+ },
+ "mmlu-pro | health | W2": {
+  "N": 38,
+  "weakest": 0.8947368421052632,
+  "weakest_model": "claude_haiku",
+  "best": 0.8947368421052632,
+  "best_model": "claude_haiku",
+  "oracle": 0.9210526315789473,
+  "prize": 0.02631578947368418,
+  "passes": false
+ },
+ "mmlu-pro | history | W2": {
+  "N": 40,
+  "weakest": 0.725,
+  "weakest_model": "claude_haiku",
+  "best": 0.75,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.8,
+  "prize": 0.050000000000000044,
+  "passes": true
+ },
+ "mmlu-pro | law | W2": {
+  "N": 37,
+  "weakest": 0.5675675675675675,
+  "weakest_model": "claude_haiku",
+  "best": 0.5945945945945946,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.7027027027027027,
+  "prize": 0.10810810810810811,
+  "passes": true
+ },
+ "mmlu-pro | math | W2": {
+  "N": 42,
+  "weakest": 0.9761904761904762,
+  "weakest_model": "claude_haiku",
+  "best": 0.9761904761904762,
+  "best_model": "claude_haiku",
+  "oracle": 0.9761904761904762,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | other | W2": {
+  "N": 40,
+  "weakest": 0.8,
+  "weakest_model": "claude_haiku",
+  "best": 0.825,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9,
+  "prize": 0.07500000000000007,
+  "passes": true
+ },
+ "mmlu-pro | philosophy | W2": {
+  "N": 34,
+  "weakest": 0.6764705882352942,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.7941176470588235,
+  "best_model": "claude_haiku",
+  "oracle": 0.8529411764705882,
+  "prize": 0.05882352941176472,
+  "passes": true
+ },
+ "mmlu-pro | physics | W2": {
+  "N": 41,
+  "weakest": 0.9512195121951219,
+  "weakest_model": "claude_haiku",
+  "best": 0.9512195121951219,
+  "best_model": "claude_haiku",
+  "oracle": 0.9512195121951219,
+  "prize": 0.0,
+  "passes": false
+ },
+ "mmlu-pro | psychology | W2": {
+  "N": 40,
+  "weakest": 0.8,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.925,
+  "best_model": "claude_haiku",
+  "oracle": 0.925,
+  "prize": 0.0,
+  "passes": false
+ },
+ "gpqa-diamond | all | P6": {
+  "N": 164,
+  "weakest": 0.6890243902439024,
+  "weakest_model": "claude_haiku",
+  "best": 0.9207317073170732,
+  "best_model": "claude_opus",
+  "oracle": 0.9817073170731707,
+  "prize": 0.060975609756097504,
+  "passes": true
+ },
+ "gpqa-diamond | Biology | P6": {
+  "N": 15,
+  "weakest": 0.5333333333333333,
+  "weakest_model": "claude_haiku",
+  "best": 0.8,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.19999999999999996,
+  "passes": true
+ },
+ "gpqa-diamond | Chemistry | P6": {
+  "N": 78,
+  "weakest": 0.5769230769230769,
+  "weakest_model": "claude_haiku",
+  "best": 0.8974358974358975,
+  "best_model": "claude_opus",
+  "oracle": 0.9743589743589743,
+  "prize": 0.07692307692307687,
+  "passes": true
+ },
+ "gpqa-diamond | Physics | P6": {
+  "N": 71,
+  "weakest": 0.8450704225352113,
+  "weakest_model": "claude_haiku",
+  "best": 0.971830985915493,
+  "best_model": "claude_opus",
+  "oracle": 0.9859154929577465,
+  "prize": 0.014084507042253502,
+  "passes": false
+ },
+ "gpqa-diamond | all | W3": {
+  "N": 164,
+  "weakest": 0.6890243902439024,
+  "weakest_model": "claude_haiku",
+  "best": 0.7378048780487805,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9024390243902439,
+  "prize": 0.16463414634146345,
+  "passes": true
+ },
+ "gpqa-diamond | Biology | W3": {
+  "N": 15,
+  "weakest": 0.5333333333333333,
+  "weakest_model": "claude_haiku",
+  "best": 0.6666666666666666,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9333333333333333,
+  "prize": 0.2666666666666667,
+  "passes": true
+ },
+ "gpqa-diamond | Chemistry | W3": {
+  "N": 78,
+  "weakest": 0.5769230769230769,
+  "weakest_model": "claude_haiku",
+  "best": 0.6025641025641025,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.8333333333333334,
+  "prize": 0.23076923076923084,
+  "passes": true
+ },
+ "gpqa-diamond | Physics | W3": {
+  "N": 71,
+  "weakest": 0.8450704225352113,
+  "weakest_model": "claude_haiku",
+  "best": 0.9154929577464789,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.971830985915493,
+  "prize": 0.05633802816901412,
+  "passes": false
+ },
+ "gpqa-diamond | all | W2": {
+  "N": 164,
+  "weakest": 0.6890243902439024,
+  "weakest_model": "claude_haiku",
+  "best": 0.7378048780487805,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.823170731707317,
+  "prize": 0.08536585365853655,
+  "passes": true
+ },
+ "gpqa-diamond | Biology | W2": {
+  "N": 15,
+  "weakest": 0.5333333333333333,
+  "weakest_model": "claude_haiku",
+  "best": 0.6666666666666666,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.7333333333333333,
+  "prize": 0.06666666666666665,
+  "passes": true
+ },
+ "gpqa-diamond | Chemistry | W2": {
+  "N": 78,
+  "weakest": 0.5769230769230769,
+  "weakest_model": "claude_haiku",
+  "best": 0.6025641025641025,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.7435897435897436,
+  "prize": 0.14102564102564108,
+  "passes": true
+ },
+ "gpqa-diamond | Physics | W2": {
+  "N": 71,
+  "weakest": 0.8450704225352113,
+  "weakest_model": "claude_haiku",
+  "best": 0.9014084507042254,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9295774647887324,
+  "prize": 0.028169014084507005,
+  "passes": false
+ },
+ "gsm-hard | all | P6": {
+  "N": 141,
+  "weakest": 0.9219858156028369,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.9858156028368794,
+  "best_model": "claude_sonnet55",
+  "oracle": 1.0,
+  "prize": 0.014184397163120588,
+  "passes": false
+ },
+ "gsm-hard | all | W3": {
+  "N": 141,
+  "weakest": 0.9219858156028369,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.9574468085106383,
+  "best_model": "claude_haiku",
+  "oracle": 0.9858156028368794,
+  "prize": 0.028368794326241065,
+  "passes": false
+ },
+ "gsm-hard | all | W2": {
+  "N": 141,
+  "weakest": 0.9219858156028369,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.9574468085106383,
+  "best_model": "claude_haiku",
+  "oracle": 0.9787234042553191,
+  "prize": 0.02127659574468077,
+  "passes": false
+ },
+ "olympiad | all | P6": {
+  "N": 83,
+  "weakest": 0.6144578313253012,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.963855421686747,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.03614457831325302,
+  "passes": false
+ },
+ "olympiad | aime24 | P6": {
+  "N": 27,
+  "weakest": 0.8148148148148148,
+  "weakest_model": "claude_haiku",
+  "best": 1.0,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.0,
+  "passes": false
+ },
+ "olympiad | aime25 | P6": {
+  "N": 27,
+  "weakest": 0.5555555555555556,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 1.0,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.0,
+  "passes": false
+ },
+ "olympiad | hmmt25 | P6": {
+  "N": 29,
+  "weakest": 0.4482758620689655,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.896551724137931,
+  "best_model": "claude_opus",
+  "oracle": 1.0,
+  "prize": 0.10344827586206895,
+  "passes": true
+ },
+ "olympiad | all | W3": {
+  "N": 83,
+  "weakest": 0.6144578313253012,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.7710843373493976,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.8795180722891566,
+  "prize": 0.10843373493975894,
+  "passes": true
+ },
+ "olympiad | aime24 | W3": {
+  "N": 27,
+  "weakest": 0.8148148148148148,
+  "weakest_model": "claude_haiku",
+  "best": 0.9259259259259259,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.9629629629629629,
+  "prize": 0.03703703703703698,
+  "passes": false
+ },
+ "olympiad | aime25 | W3": {
+  "N": 27,
+  "weakest": 0.5555555555555556,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.7407407407407407,
+  "best_model": "claude_haiku",
+  "oracle": 0.8518518518518519,
+  "prize": 0.11111111111111116,
+  "passes": true
+ },
+ "olympiad | hmmt25 | W3": {
+  "N": 29,
+  "weakest": 0.4482758620689655,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.7586206896551724,
+  "best_model": "z-ai_glm-5.3-flash",
+  "oracle": 0.8275862068965517,
+  "prize": 0.06896551724137934,
+  "passes": true
+ },
+ "olympiad | all | W2": {
+  "N": 83,
+  "weakest": 0.6144578313253012,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.7469879518072289,
+  "best_model": "claude_haiku",
+  "oracle": 0.8192771084337349,
+  "prize": 0.07228915662650603,
+  "passes": true
+ },
+ "olympiad | aime24 | W2": {
+  "N": 27,
+  "weakest": 0.8148148148148148,
+  "weakest_model": "claude_haiku",
+  "best": 0.8518518518518519,
+  "best_model": "deepseek_deepseek-v3.2",
+  "oracle": 0.9259259259259259,
+  "prize": 0.07407407407407407,
+  "passes": false
+ },
+ "olympiad | aime25 | W2": {
+  "N": 27,
+  "weakest": 0.5555555555555556,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.7407407407407407,
+  "best_model": "claude_haiku",
+  "oracle": 0.7777777777777778,
+  "prize": 0.03703703703703709,
+  "passes": false
+ },
+ "olympiad | hmmt25 | W2": {
+  "N": 29,
+  "weakest": 0.4482758620689655,
+  "weakest_model": "deepseek_deepseek-v3.2",
+  "best": 0.6896551724137931,
+  "best_model": "claude_haiku",
+  "oracle": 0.7586206896551724,
+  "prize": 0.06896551724137923,
+  "passes": true
+ }
+}

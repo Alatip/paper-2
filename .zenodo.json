@@ -1,0 +1,44 @@
+{
+  "creators": [
+    {
+      "name": "Latipov, Aziz",
+      "affiliation": "Independent researcher",
+      "orcid": "0009-0003-8938-8223"
+    }
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "title": "Code and data for: Generative operators in language-model ensembles: what they add to their starting point and what they cost",
+  "description": "Code, derived data (parsed final answers as letters, numbers or opaque codes, 0/1 correctness, token counts and costs) and tests that recompute the tables of the paper \"Generative operators in language-model ensembles: what they add to their starting point and what they cost\" (paper 2 of a series on language-model ensembles) from the stored data, offline and without model calls: self-consistency, sources of diversity, debate, synthesis and decomposition, measured against their starting point and compared at an equal budget in dollars; an exploratory set A and a preregistered confirmatory set B. Code under MIT; per-source terms for the data in LICENSE-DATA.md. GPQA Diamond and HLE: item identifiers and answer letters or opaque codes only.",
+  "keywords": [
+    "self-consistency",
+    "debate",
+    "synthesis",
+    "decomposition",
+    "LLM ensembles",
+    "equal-dollar budget"
+  ],
+  "access_right": "open",
+  "version": "1.0.0",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23454436",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.23252753",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.23274139",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "software"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+item_id,dataset,wave,decision,old_gold,new_gold,reason
+mmlupro:527,MMLU-Pro,1,gold corrected,A,B,"2/5 = 40%, 1/100 = 1%"
+mmlupro:10666,MMLU-Pro,1,gold corrected,D,F,small training set -> overfitting (True); small hypothesis space -> underfitting (False)
+mmlupro:6224,MMLU-Pro,1,gold corrected,B,D,prone = lying face down
+mmlupro:8672,MMLU-Pro,1,gold corrected,E,I,power rises with alpha and n; option I maximises both
+mmlupro:11051,MMLU-Pro,1,gold corrected,B,A,Coddling of the American Mind: colleges encourage emotional reasoning
+mmlupro:2199,MMLU-Pro,1,gold corrected,D,H,crowding research: men react with more stress/aggression than women
+mmlupro:5787,MMLU-Pro,1,gold corrected,G,D,"Burgess zone IV = residential zone (better houses, single-family, higher-rent apartments)"
+mmlupro:936,MMLU-Pro,1,gold corrected,D,A,Cooper v. Oklahoma (1996): clear-and-convincing burden on defendant unconstitutional
+mmlupro:9814,MMLU-Pro,1,gold corrected,D,I,v=0 at top (I true); a=g at top (II false); fall slower than rise with drag (III false)
+gsmhard:97019604,GSM-Hard,1,gold corrected,4646529.0,9873855,(2/3)*6969780 + (3/4)*6969780 = 9873855; gold kept boys term at original 9
+gsmhard:61258154,GSM-Hard,1,gold corrected,26.0,25,"needs 828650 empty pens per new pen, has 25 -> 25 pens total"
+gsmhard:61484486,GSM-Hard,1,gold corrected,8637843.0,17274746,8637403 + (8637403-60); gold kept 500-60
+gsmhard:83731584,GSM-Hard,1,gold corrected,-28107372.0,112430688,468461200/20 = 23423060 bills; -4684612; /2; *20; *3; /5 = 112430688; gold kept $1000 withdrawal
+gsmhard:48266007,GSM-Hard,1,gold corrected,14.0,18,14 + (14-4-6) = 18; gold omits game 2
+gsmhard:75619407,GSM-Hard,1,gold corrected,1111117.0,972228,(7777802+22)/8 = 972228; gold divides by 7
+gsmhard:19117345,GSM-Hard,1,gold corrected,15.0,50627678,6 packs * 8437946.50 = 50627679 vs $1 package -> saves 50627678; gold uses original prices
+gsmhard:4218257,GSM-Hard,1,gold corrected,388147.4117647059,396072,(3299286-12-15-4*1.3299286)/8.3299286 = 396072.3 -> 396072 boxes; gold uses original $1.50/$8.50
+gsmhard:46986761,GSM-Hard,1,gold corrected,16278237.0,32556468,x+2x+3x = 6*5426078; gold kept '1 more' increments
+gsmhard:67845971,GSM-Hard,1,gold corrected,10296189.0,13728241,10+5+3*3432054+10+3432054; gold kept fish food at $2
+gsmhard:90104808,GSM-Hard,1,gold corrected,68877330.0,24,6 lb * $4 = $24; promotion threshold 2869889 lb never reached
+gpqa:17,GPQA Diamond,1,gold corrected,A,C,"(GPQA: reason withheld, dataset terms)"
+mmlupro:558,MMLU-Pro,1,excluded,,,two options both true (F more complete)
+mmlupro:10633,MMLU-Pro,1,excluded,,,stem garbled (training vs testing error)
+mmlupro:7020,MMLU-Pro,1,excluded,,,two options identical in content
+mmlupro:7471,MMLU-Pro,1,excluded,,,two options are the same equation rearranged
+mmlupro:7443,MMLU-Pro,1,excluded,,,two defensible options
+mmlupro:4981,MMLU-Pro,1,excluded,,,two defensible options
+mmlupro:887,MMLU-Pro,1,excluded,,,nature vs function of punishment ambiguous
+mmlupro:5024,MMLU-Pro,1,excluded,,,ideas vs medium; two defensible readings
+mmlupro:3811,MMLU-Pro,1,excluded,,,options D and E both correct
+mmlupro:11057,MMLU-Pro,1,excluded,,,two defensible options
+mmlupro:129,MMLU-Pro,1,excluded,,,synonymous options (variability/heterogeneity) plus a defensible third
+mmlupro:1370,MMLU-Pro,1,excluded,,,two options say the same thing
+mmlupro:2592,MMLU-Pro,1,excluded,,,correct dichotomy missing from options
+mmlupro:5367,MMLU-Pro,1,excluded,,,several options fit
+mmlupro:5442,MMLU-Pro,1,excluded,,,"source-dependent survey statistic, unverifiable"
+gsmhard:25541475,GSM-Hard,1,excluded,,,ill-posed after substitution; gold not correct by construction either
+gsmhard:38336690,GSM-Hard,1,excluded,,,ill-posed after substitution (negative count); gold correct by construction only
+gsmhard:17247299,GSM-Hard,1,excluded,,,whole vs fractional boxes both defensible; gold neither
+gsmhard:49950889,GSM-Hard,1,excluded,,,direction ambiguous; gold fails under every reading
+gsmhard:20970607,GSM-Hard,1,excluded,,,negative weight; literal vs real-world reading
+gsmhard:56793937,GSM-Hard,1,excluded,,,ill-posed: two movie lengths for N movies
+gpqa:167,GPQA Diamond,1,excluded,,,"(GPQA: reason withheld, dataset terms)"
+aime25:13,AIME 2025,1,kept (models wrong),,,models wrong (Opus right): 38+19sqrt3 -> 60
+mmlupro:4945,MMLU-Pro,1,kept (models wrong),,,gold defensible
+gpqa:32,GPQA Diamond,1,kept (models wrong),,,"(GPQA: reason withheld, dataset terms)"
+hmmt25:2,HMMT 2025,1,grader error fixed,,,1/576 vs \frac{1}{576}
+hmmt25:22,HMMT 2025,1,grader error fixed,,,8sqrt10 in several formats
+gsmhard:6235500,GSM-Hard,2,gold corrected,39.9999834113,24112830.0000041,gold recomputed from the statement
+gsmhard:40949084,GSM-Hard,2,gold corrected,9435680550.0,14178334486374317338200,gold recomputed from the statement
+gsmhard:67561983,GSM-Hard,2,excluded,,,answer not an integer (154800.17 cubes); gold from the original GSM8K numbers
+gsmhard:47213175,GSM-Hard,2,excluded,,,answer not an integer (584536.4 balls)
+gsmhard:39440512,GSM-Hard,2,excluded,,,statement garbled by number substitution
+mmlupro:2178,MMLU-Pro,2,excluded,,,statements I-IV referred to in the options are missing from the stem
+mmlupro:9071,MMLU-Pro,2,excluded,,,two options express the same quantity in different units (cal/g and Btu/lb)
+mmlupro:11883,MMLU-Pro,2,excluded,,,mass balance gives 0.126 (or 0.144); neither the gold nor any option
+mmlupro:3792,MMLU-Pro,2,excluded,,,answer depends on a factor-2 convention (symmetry number / degeneracy)
+mmlupro:12232,MMLU-Pro,2,excluded,,,answer depends on tables of a specific textbook
+mmlupro:6214,MMLU-Pro,2,excluded,,,several options fit the stem
+mmlupro:6598,MMLU-Pro,2,excluded,,,"textbook-specific claim, not verifiable"
+mmlupro:6664,MMLU-Pro,2,excluded,,,outdated key (donor eggs are standard care)
+mmlupro:1365,MMLU-Pro,2,excluded,,,depends on an unstated assumption about the mailbox rule
+mmlupro:1733,MMLU-Pro,2,excluded,,,key likely differs from the official MBE answer
+mmlupro:1754,MMLU-Pro,2,excluded,,,key likely differs from the official MBE answer
+hmmt25:29,HMMT 2025,2,grader error fixed,,,grader did not match sqrt(570)/12 = sqrt(95/24); three models correct
+gpqa:32,GPQA Diamond,2,kept (models wrong),,,"(GPQA: reason withheld, dataset terms)"
+gpqa:76,GPQA Diamond,2,kept (models wrong),,,"(GPQA: reason withheld, dataset terms)"
+mmlupro:4945,MMLU-Pro,2,kept (models wrong),,,models wrong; gold kept

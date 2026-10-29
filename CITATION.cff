@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Code and data for: Generative operators in language-model ensembles: what they add to their starting point and what they cost"
+type: software
+authors:
+  - family-names: Latipov
+    given-names: Aziz
+    orcid: "https://orcid.org/0009-0003-8938-8223"
+    affiliation: "Independent researcher"
+    email: "aziz.latypov@gmail.com"
+license: MIT
+version: "1.0.0"
+repository-code: "https://github.com/Alatip/paper-2"
+doi: "10.5281/zenodo.23756146"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23756146"
+    description: "Zenodo archive of this repository, version 1.0.0"
+keywords:
+  - self-consistency
+  - debate
+  - synthesis
+  - decomposition
+  - LLM ensembles
+  - equal-dollar budget
+date-released: "2026-10-29"

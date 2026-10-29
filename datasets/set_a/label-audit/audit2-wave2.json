@@ -1,0 +1,9 @@
+{
+ "date": "2026-10-17",
+ "note": "Second-wave label audit of items all seven models got wrong in the uncapped corpus; see AUDIT-2.md. Approved 2026-10-17.",
+ "grader_fixed_correct": {"hmmt25:29": ["claude_opus", "qwen_qwen3.7-plus", "z-ai_glm-5.3-flash"]},
+ "relabels": {"gsmhard:6235500": "24112830.0000041", "gsmhard:40949084": "14178334486374317338200"},
+ "excluded": ["gsmhard:67561983", "gsmhard:47213175", "gsmhard:39440512", "mmlupro:2178", "mmlupro:9071", "mmlupro:11883",
+              "mmlupro:3792", "mmlupro:12232", "mmlupro:6214", "mmlupro:6598", "mmlupro:6664", "mmlupro:1365", "mmlupro:1733", "mmlupro:1754"],
+ "kept_models_wrong": ["gpqa:32", "gpqa:76", "mmlupro:4945"]
+}

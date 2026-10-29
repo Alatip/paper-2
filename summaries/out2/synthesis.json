@@ -1,0 +1,44 @@
+{
+ "moa": {
+  "aggregator": 0.8771186440677966,
+  "any_input": 0.940677966101695,
+  "input_majority": 0.8601694915254238,
+  "items": 236,
+  "none_correct_ids": [
+   "aime24:2",
+   "aime24:3",
+   "aime25:12",
+   "aime25:13",
+   "aime25:14",
+   "aime25:27",
+   "aime25:29",
+   "gpqa:18",
+   "gpqa:3",
+   "gpqa:30",
+   "gpqa:32",
+   "gpqa:57",
+   "gsmhard:36264882",
+   "gsmhard:65323210"
+  ],
+  "none_correct_items": 14,
+  "none_correct_recovered": 0,
+  "novel": 0,
+  "novel_correct": 0
+ },
+ "synth": {
+  "aggregator": 0.9690265486725663,
+  "any_input": 0.9823008849557522,
+  "input_majority": 0.9734513274336283,
+  "items": 226,
+  "none_correct_ids": [
+   "gsmhard:11771746",
+   "gsmhard:36264882",
+   "mmlupro:2935",
+   "mmlupro:3393"
+  ],
+  "none_correct_items": 4,
+  "none_correct_recovered": 0,
+  "novel": 1,
+  "novel_correct": 1
+ }
+}

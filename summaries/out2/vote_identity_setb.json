@@ -1,0 +1,174 @@
+{
+ "votes": {
+  "vote7_r0": {
+   "acc_old": 0.77,
+   "acc_new": 0.805,
+   "0to1": [
+    "hle:6721545d3f8c49e613c94fac",
+    "ma:arxivmath-0626:21",
+    "ma:arxivmath-0626:23",
+    "ma:arxivmath-0626:27",
+    "ob:1014",
+    "seqqa:18d20d53-b90a-4dfb-be27-d52e540aa614",
+    "hle:6711751e42ab43fd77c2507b"
+   ],
+   "1to0": []
+  },
+  "debate7_r2": {
+   "acc_old": 0.79,
+   "acc_new": 0.8,
+   "0to1": [
+    "hle:66e9173256ec303aa22ccd37",
+    "ob:928"
+   ],
+   "1to0": []
+  },
+  "sc_deepseek": {
+   "acc_old": 0.71,
+   "acc_new": 0.715,
+   "0to1": [
+    "hle:672b75530af18d6c52ca104c",
+    "ob:1576"
+   ],
+   "1to0": [
+    "ob:1223"
+   ]
+  },
+  "sc_glm": {
+   "acc_old": 0.54,
+   "acc_new": 0.575,
+   "0to1": [
+    "hle:66eddc58fcc3c877643b5f39",
+    "hle:670c447dd0306cd3ba94b47a",
+    "hle:6721545d3f8c49e613c94fac",
+    "hle:673829d59b3842b348242450",
+    "ma:arxivmath-0626:27",
+    "ob:1014",
+    "ma:smt_2025:41"
+   ],
+   "1to0": []
+  },
+  "copies_deepseek": {
+   "acc_old": 0.755,
+   "acc_new": 0.755,
+   "0to1": [],
+   "1to0": []
+  }
+ },
+ "deltas": {
+  "old": {
+   "debate7_vs_vote7": {
+    "acc_base": 0.77,
+    "acc_op": 0.79,
+    "delta": 0.02,
+    "W": 13,
+    "L": 9,
+    "p": 0.5234670639038086
+   },
+   "synth_vs_vote7": {
+    "acc_base": 0.77,
+    "acc_op": 0.795,
+    "delta": 0.025,
+    "W": 12,
+    "L": 7,
+    "p": 0.359283447265625
+   },
+   "sc_deepseek_vs_draw1": {
+    "acc_base": 0.66,
+    "acc_op": 0.71,
+    "delta": 0.05,
+    "W": 18,
+    "L": 8,
+    "p": 0.07551869750022888
+   },
+   "sc_glm_vs_draw1": {
+    "acc_base": 0.35,
+    "acc_op": 0.54,
+    "delta": 0.19,
+    "W": 41,
+    "L": 3,
+    "p": 1.6183321349672042e-09
+   },
+   "copies_vs_sc5": {
+    "acc_base": 0.71,
+    "acc_op": 0.755,
+    "delta": 0.045,
+    "W": 12,
+    "L": 3,
+    "p": 0.03515625
+   }
+  },
+  "new": {
+   "debate7_vs_vote7": {
+    "acc_base": 0.805,
+    "acc_op": 0.8,
+    "delta": -0.005,
+    "W": 8,
+    "L": 9,
+    "p": 1.0
+   },
+   "synth_vs_vote7": {
+    "acc_base": 0.805,
+    "acc_op": 0.795,
+    "delta": -0.01,
+    "W": 6,
+    "L": 8,
+    "p": 0.79052734375
+   },
+   "sc_deepseek_vs_draw1": {
+    "acc_base": 0.66,
+    "acc_op": 0.715,
+    "delta": 0.055,
+    "W": 18,
+    "L": 7,
+    "p": 0.043285250663757324
+   },
+   "sc_glm_vs_draw1": {
+    "acc_base": 0.35,
+    "acc_op": 0.575,
+    "delta": 0.225,
+    "W": 45,
+    "L": 0,
+    "p": 5.684341886080802e-14
+   },
+   "copies_vs_sc5": {
+    "acc_base": 0.715,
+    "acc_op": 0.755,
+    "delta": 0.04,
+    "W": 12,
+    "L": 4,
+    "p": 0.076812744140625
+   }
+  }
+ },
+ "all7_correct": 28,
+ "all7_correct_multi_code": 13,
+ "multi_ids": [
+  "hle:66eaed13c47c4325f612ff48",
+  "hle:670402f0bae67686d8aef3e8",
+  "hle:6721a42269600ecb23a3e623",
+  "ma:arxivmath-0626:31",
+  "ob:1461",
+  "ob:813",
+  "ob:821",
+  "ma:cmimc_2025:38",
+  "ma:hmmt_feb_2025:27",
+  "ma:hmmt_feb_2025:7",
+  "ma:hmmt_nov_2025:20",
+  "ob:806",
+  "ob:1416"
+ ],
+ "items_correct_and_wrong_share_code": [
+  "hle:670402f0bae67686d8aef3e8",
+  "hle:67136bf495e840a8db703aee",
+  "hle:672f7ddd281b45ba7e99346d",
+  "hle:674362ab6b7aa212dfb90595",
+  "hle:67884c06637d9e8c9d4e5ea4",
+  "ob:1223",
+  "ob:1342",
+  "ob:905",
+  "ob:1576",
+  "ob:1052",
+  "hle:670d933ad54037c51abbe3ca"
+ ]
+}
