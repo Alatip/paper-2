@@ -9,13 +9,13 @@ authors:
     affiliation: "Independent researcher"
     email: "aziz.latypov@gmail.com"
 license: MIT
-version: "1.0.0"
+version: "1.0.1"
 repository-code: "https://github.com/Alatip/paper-2"
-doi: "10.5281/zenodo.23756146"
+doi: "10.5281/zenodo.23756145"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.23756146"
-    description: "Zenodo archive of this repository, version 1.0.0"
+    value: "10.5281/zenodo.23756145"
+    description: "Zenodo archive of this repository, all versions (concept DOI)"
 keywords:
   - self-consistency
   - debate

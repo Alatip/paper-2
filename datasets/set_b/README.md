@@ -82,4 +82,4 @@ analysis, dropped in a separate sensitivity analysis); `ambiguous_kept` (1).
    rare answers in unusual formats.
 
 Model outputs are random, so a rerun gives the same picture within the confidence intervals, not the same rows.
-Our cost: about $95 on OpenRouter and about $400 of Claude at list price.
+Our cost: $529 in total for the preregistered operators (Table B.4 of the paper: OpenRouter as billed, Claude at list price), plus the two extra Claude Opus 4.6 draws per item used only by `sc.opus3` (Section 4.2.1), which Table B.4 does not include.

@@ -81,7 +81,7 @@ label audit documented in the paper corrected the upstream golds it found wrong;
 ## Part 2. Per-paper table (paper 2)
 
 Paper: Aziz Latipov, "Generative operators in language-model ensembles: what they add to their starting point and what
-they cost" (2026), paper 2 of a series. Code and data: https://github.com/Alatip/paper-2, archived at Zenodo, DOI 10.5281/zenodo.23756146 (https://doi.org/10.5281/zenodo.23756146).
+they cost" (2026), paper 2 of a series. Code and data: https://github.com/Alatip/paper-2, archived at Zenodo, DOI 10.5281/zenodo.23756145 for all versions (https://doi.org/10.5281/zenodo.23756145).
 
 Set B (`datasets/set_b/`): what we store for every source is the item id (upstream key), tier and flags, the parsed
 final answers of our runs (a letter, a short number or an opaque code `~k`), 0/1 correctness, token counts and costs.

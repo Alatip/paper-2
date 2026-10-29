@@ -27,7 +27,7 @@ for the budget and debate sections. Model names and prices are at the top of `da
 | `operators/` | one script per operator on set A: `self_consistency.py`, `diversity.py`, `debate.py`, `synthesis.py`, `debate_weak.py`, `debate_bounds.py`, `decomposition.py`, `budget.py`, `core_report.py`; `setb_report.py` for set B; loaders in `p2io.py` and `p2parts/` |
 | `summaries/build2.py` | runs every set-A operator and writes `summaries/out2/*.json` / `*.md` (under a minute) |
 | `summaries/out2/` | the stored outputs the paper's numbers are read from |
-| `summaries/*.py` | side-table scripts (core vs rest, debate rounds, self-consistency curve, set-B filters, vote identity) |
+| `summaries/*.py` | side-table scripts (core vs rest, debate rounds, self-consistency curve, set-B filters, vote identity, self-consistency vs the first sample with an answer, answer mechanics and tie-rule robustness) |
 | `docs/SETB-SPEC.md` | the analysis specification of set B |
 | `docs/PREREG.md` | condensed preregistration of set B |
 | `tests/` | `pytest tests`: unit tests, data checks, and regressions against the stored outputs in `tests/expected2/` |
@@ -42,6 +42,8 @@ python3 summaries/sc_curve.py                     # self-consistency by number o
 python3 summaries/set_filter.py                   # set-B filters (also --no-mistral)
 python3 operators/setb_report.py                  # set B -> summaries/out2/setB.{json,md}
 python3 summaries/vote_identity_setb.py           # set B: answer identity of the votes
+python3 summaries/sc_fair_setb.py                 # set B: self-consistency vs the first sample with an answer
+python3 summaries/mechanics_setb.py               # set B: how the answers behave, tie-rule robustness (4.1.4)
 SETB_NO_DEFECTIVE=1 python3 operators/setb_report.py   # set B without the 3 defective items
 pytest tests
 ```
@@ -75,4 +77,4 @@ Code under MIT (`LICENSE`). Data: our own runs under CC BY 4.0, third-party item
 ## Cite as
 
 Aziz Latipov. *Generative operators in language-model ensembles: what they add to their starting point and what they cost.* 2026.
-Code and data: https://github.com/Alatip/paper-2, DOI 10.5281/zenodo.23756146 (https://doi.org/10.5281/zenodo.23756146). See also `CITATION.cff`.
+Code and data: https://github.com/Alatip/paper-2, DOI 10.5281/zenodo.23756145 for all versions (https://doi.org/10.5281/zenodo.23756145; v1.0.0: 10.5281/zenodo.23756146). See also `CITATION.cff`.

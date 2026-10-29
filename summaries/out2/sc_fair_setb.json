@@ -1,0 +1,72 @@
+{
+ "glm": {
+  "model": "z-ai/glm-4.7-flash",
+  "n": 200,
+  "acc_first": 0.35,
+  "acc_first_answered": 0.495,
+  "acc_mean_answered": 0.5316666666666666,
+  "acc_vote": 0.54,
+  "empty_first": 72,
+  "none_answered": 21,
+  "gain_paper_pp": 19.0,
+  "gain_fair_pp": 4.5,
+  "fair_lo": 1.0,
+  "fair_hi": 8.5,
+  "W": 12,
+  "L": 3,
+  "p": 0.03515625,
+  "start_shift_pp": 14.5
+ },
+ "deepseek": {
+  "model": "deepseek/deepseek-v3.2",
+  "n": 200,
+  "acc_first": 0.66,
+  "acc_first_answered": 0.675,
+  "acc_mean_answered": 0.6775000000000001,
+  "acc_vote": 0.71,
+  "empty_first": 5,
+  "none_answered": 0,
+  "gain_paper_pp": 5.0,
+  "gain_fair_pp": 3.5,
+  "fair_lo": -1.0,
+  "fair_hi": 8.0,
+  "W": 15,
+  "L": 8,
+  "p": 0.21003961563110352,
+  "start_shift_pp": 1.5
+ },
+ "holm_if_replaced": {
+  "family": [
+   "sc.deepseek-v3.2",
+   "sc.glm-4.7-flash",
+   "copies.deepseek",
+   "debate7",
+   "synth.opus",
+   "sc.opus3",
+   "decomp.deepseek-v3.2",
+   "decomp.glm-4.7-flash",
+   "decomp.claude-sonnet-4-6"
+  ],
+  "p_holm": {
+   "sc.deepseek-v3.2": 0.4531121850013733,
+   "sc.glm-4.7-flash": 0.28125,
+   "copies.deepseek": 0.28125,
+   "debate7": 1.0,
+   "synth.opus": 1.0,
+   "sc.opus3": 1.0,
+   "decomp.deepseek-v3.2": 1.0,
+   "decomp.glm-4.7-flash": 0.2170759029686451,
+   "decomp.claude-sonnet-4-6": 1.0
+  },
+  "glm": 0.28125,
+  "min": 0.2170759029686451,
+  "n_significant": 0
+ },
+ "mde": {
+  "n": 200,
+  "discordant_share": 0.075,
+  "power": 0.8,
+  "pp_alpha05": 5.010000000000002,
+  "pp_holm9": 6.266250000000001
+ }
+}
