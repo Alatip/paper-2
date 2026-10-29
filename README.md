@@ -6,7 +6,7 @@ synthesis, decomposition, and comparisons at an equal budget in dollars.
 
 Nothing here calls a model. Every script reads the stored tables in `datasets/` and recomputes the paper's numbers
 offline, at no cost. Requirements: Python 3.9–3.12 (the pins do not install on 3.13), numpy and scipy (`pytest` for the tests): `python3 -m pip install -r requirements.txt` (pinned to
-the versions the checks were run with; tested on Python 3.9.6).
+the versions the checks were run with; tested on Python 3.9.6). One optional test cross-checks Holm/BH against `statsmodels` and is skipped if it is not installed.
 
 ## Two sets of data
 
@@ -77,4 +77,4 @@ Code under MIT (`LICENSE`). Data: our own runs under CC BY 4.0, third-party item
 ## Cite as
 
 Aziz Latipov. *Generative operators in language-model ensembles: what they add to their starting point and what they cost.* 2026.
-Code and data: https://github.com/Alatip/paper-2, DOI 10.5281/zenodo.23756145 for all versions (https://doi.org/10.5281/zenodo.23756145; v1.0.0: 10.5281/zenodo.23756146). See also `CITATION.cff`.
+Code and data: https://github.com/Alatip/paper-2, DOI 10.5281/zenodo.23756145 for all versions (https://doi.org/10.5281/zenodo.23756145; v1.0.0: 10.5281/zenodo.23756146; v1.0.1: 10.5281/zenodo.23767117; v1.0.2, cited by the paper: 10.5281/zenodo.23768545). See also `CITATION.cff`.

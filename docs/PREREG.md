@@ -1,8 +1,8 @@
 # Preregistration — paper 2, set B (generative operators)
 
 This is a condensed English rendering of the preregistration kept in the authors' local version control. The original
-was written on 2026-10-20 and amended on 2026-10-22, 2026-10-23 and 2026-10-26, each time before any operator call that
-produced the scored data. Cross-references to internal working files and editorial notes are removed; the hypotheses,
+was written on 2026-10-20 and amended on 2026-10-22 and 2026-10-23, before the operator calls that produced the scored
+data; decisions from 2026-10-26 on were taken after the data and are listed in section 5 as deviations. Cross-references to internal working files and editorial notes are removed; the hypotheses,
 thresholds, decision rule and amendments are reproduced without change in substance. Set A (the paper-1 corpus) is
 exploratory: the hypotheses below were derived from it and are not tested on it.
 
@@ -80,7 +80,7 @@ a report on the completed operators.
 
 ## 5. Decisions taken after the data (not preregistered)
 
-- Gold audit of the 23 items no model solved: 1 gold corrected, 3 grader fixes, 3 defective items (kept; analysis without
+- Gold audit of the items no model solved (the 23 known at the time; a 24th joined after the cut rule of 29 October): 1 gold corrected, 3 grader fixes, 3 defective items (kept; analysis without
   them reported as sensitivity).
 - For resampling operators (self-consistency, copies) the collected share of the prize is replaced by the share of the
   pass@k headroom (pass@k − mean draw).

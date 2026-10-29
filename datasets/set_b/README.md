@@ -49,8 +49,8 @@ answers only. Each candidate was tried by Claude Haiku 4.5 up to three times. `m
 tier was picked with Haiku, Haiku's accuracy here is biased upwards.
 
 ## Gold audit
-The 23 items that all seven models got wrong were reviewed one by one (by Claude Opus 5.5, rechecked by Claude
-Fable 5.1): `relabel` — the reference answer was wrong and was corrected (1); `grader_fix` — the right answer was written in a
+Of the 24 items that all seven models got wrong, 23 were reviewed one by one by Claude Opus 5.5 and rechecked by Claude
+Fable 5.1 (the 24th joined the list only after the cut rule of 29 October): `relabel` — the reference answer was wrong and was corrected (1); `grader_fix` — the right answer was written in a
 form the automatic grader could not read (3); `defective` — the item cannot be answered as stated (3; kept in the main
 analysis, dropped in a separate sensitivity analysis); `ambiguous_kept` (1).
 
@@ -62,7 +62,7 @@ analysis, dropped in a separate sensitivity analysis); `ambiguous_kept` (1).
    line as: FINAL: <answer>`. Output cap 64,000 tokens, reasoning effort medium, the provider's default temperature.
 3. Models: Claude Haiku 4.5, Sonnet 4.6, Opus 4.6; DeepSeek V3.2, GLM 4.7 Flash (provider Novita), Qwen 3.8-27B, Kimi K2.5
    (OpenRouter).
-4. Operators: self-consistency = majority of 5 draws; debates = 2 rounds, each agent sees the others' latest answers and
+4. Operators: self-consistency = plurality of 5 draws; debates = 2 rounds, each agent sees the others' latest answers and
    the last 1,500 characters of their reasoning, then answers again; synthesis = Opus 4.6 sees the 7 first answers with
    the same excerpts and gives one answer; decomposition = plan (reasoning off, up to 4,096 tokens), each subtask up to
    64,000 tokens, assembly.

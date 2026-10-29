@@ -67,6 +67,14 @@
   "discordant_share": 0.075,
   "power": 0.8,
   "pp_alpha05": 5.010000000000002,
-  "pp_holm9": 6.266250000000001
+  "pp_holm9": 6.266250000000001,
+  "debate7": {
+   "discordant_share": 0.11,
+   "pp_alpha05": 6.225999999999998
+  },
+  "synth.opus": {
+   "discordant_share": 0.095,
+   "pp_alpha05": 5.738000000000001
+  }
  }
 }

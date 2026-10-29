@@ -74,6 +74,10 @@ def mde(n, d, alpha, power=0.8):
 d_glm = (res["glm"]["W"] + res["glm"]["L"]) / res["glm"]["n"]
 res["mde"] = {"n": res["glm"]["n"], "discordant_share": d_glm, "power": 0.8,
               "pp_alpha05": mde(res["glm"]["n"], d_glm, 0.05), "pp_holm9": mde(res["glm"]["n"], d_glm, 0.05 / 9)}
+# the same calculation with the discordance of debate and synthesis against their starting point (the vote)
+for k in ("debate7", "synth.opus"):
+    d_k = (SB[k]["W"] + SB[k]["L"]) / SB[k]["N"]
+    res["mde"][k] = {"discordant_share": d_k, "pp_alpha05": mde(SB[k]["N"], d_k, 0.05)}
 
 OUT.mkdir(parents=True, exist_ok=True)
 (OUT / "sc_fair_setb.json").write_text(json.dumps(res, indent=1))
